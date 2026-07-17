@@ -1,6 +1,7 @@
 ---
 name: flow-trace-genesis
 description: Lần đầu tiếp cận một project CHƯA có skill flow-trace local — khảo sát codebase (Evidence/Candidate/Ingest tier) rồi SINH skill flow-trace local self-contained cho project đó (CORE + PROFILE, version stamp, golden-flow gate Draft→Verified). Dùng khi user gọi /flow-trace-genesis, muốn "dạy AI trace flow project này", hoặc muốn regenerate CORE của flow-trace đã sinh. KHÔNG dùng khi project đã có flow-trace local và user chỉ muốn trace — khi đó dùng chính skill local.
+argument-hint: TARGET_DIR=<path> [PRD=<file>] [ADVISOR=gitnexus|deepwiki|none]
 ---
 
 # Flow-Trace Genesis — sinh skill flow-trace cho project lạ

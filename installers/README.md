@@ -11,7 +11,7 @@ nhanh** — v1 chủ đích chỉ copy-file + bảng mapping này, không abstra
 
 | Target | Skill copy tới | Command/prompt copy tới | Cách harness nhận |
 | --- | --- | --- | --- |
-| `claude` | `~/.claude/skills/flow-trace-genesis/` | `~/.claude/commands/flow-trace-genesis.md` | Skill + slash command user-global (dùng khi không muốn marketplace) |
+| `claude` | `~/.claude/skills/flow-trace-genesis/` | (không copy — SKILL.md tự là `/flow-trace-genesis`, Claude Code đã hợp nhất command/skill; copy thêm command file sẽ tạo skill trùng tên) | Skill user-global (dùng khi không muốn marketplace) |
 | `codex` | `~/.codex/skills/flow-trace-genesis/` | `~/.codex/prompts/flow-trace-genesis.md` | Prompt `/flow-trace-genesis`; trỏ skill từ `~/.codex/AGENTS.md` nếu bản Codex chưa tự đọc skills dir |
 | `opencode` | `~/.config/opencode/skills/flow-trace-genesis/` | `~/.config/opencode/commands/flow-trace-genesis.md` | Command custom; wire skill qua AGENTS.md/config nếu cần |
 | `cursor` | `~/.cursor/skills/flow-trace-genesis/` | `~/.cursor/commands/flow-trace-genesis.md` | Cursor chưa có chuẩn skills — thêm rule trong `.cursor/rules` trỏ tới SKILL.md |

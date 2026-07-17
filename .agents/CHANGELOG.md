@@ -18,6 +18,21 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-17 — 5.2 validated + fix lệch manifest; bootstrap Done
+
+**Loại**: Fix / Verification
+
+**Thay đổi**:
+- Validate plugin trên bản Claude Code đang chạy qua `claude --plugin-dir ... plugin details`:
+  load OK, MCP 3 server. Phát hiện Claude Code hợp nhất commands/skills → command file
+  trong plugin tạo skill trùng tên (Skills ×2). Fix: chuyển `commands/flow-trace-genesis.md`
+  → `installers/prompts/` (chỉ dành cho Codex/OpenCode/Cursor), SKILL.md thêm
+  `argument-hint`, installer target `claude` bỏ copy command. Kết quả: Skills (1), ~243 tok.
+- marketplace.json: `description` top-level, khớp schema marketplace đã cài thật trên máy.
+- Bãi thử golden Go đổi theo chỉ đạo user: `~/Repositories/Go/grpc-go`.
+
+**Trạng thái**: `Done` — bootstrap 19/19; push lên remote sau commit này.
+
 ### 2026-07-17 — Bootstrap v1 thực thi xong (executor gate mở bằng "Specs approved")
 
 **Loại**: Product / Bootstrap

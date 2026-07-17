@@ -1,7 +1,22 @@
 # Evidence — bootstrap v1
 
-Status: Review — executor gate MỞ 2026-07-17 ("Specs approved"), thực thi xong 8 bước;
-còn 1 mục verify manual (5.2) chờ user.
+Status: Done (2026-07-17) — 19/19 task; 5.2 đóng bằng `--plugin-dir` validation + fix lệch.
+
+## Verification 5.2 (fresh, sau fix)
+
+```text
+$ claude --plugin-dir <repo>/plugins/flow-trace-genesis plugin details flow-trace-genesis
+flow-trace-genesis 0.1.0 · Skills (1) flow-trace-genesis · MCP servers (3) serena, markitdown, docling
+Always-on: ~243 tok
+```
+
+Lệch đã phát hiện & fix trước khi push:
+- Claude Code hợp nhất commands/skills → `commands/flow-trace-genesis.md` trong plugin
+  thành skill thứ 2 trùng tên (Skills (2), 305 tok). Fix: `git mv` ra
+  `installers/prompts/`, SKILL.md thêm `argument-hint`; installer target `claude` bỏ copy
+  command file (guard CMD_DST rỗng).
+- marketplace.json: `description` chuyển lên top-level khớp schema marketplace thật đang
+  cài trên máy.
 
 ## Verification (fresh, 2026-07-17)
 

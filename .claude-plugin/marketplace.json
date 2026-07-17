@@ -1,12 +1,9 @@
 {
   "name": "flow-trace-genesis-marketplace",
+  "description": "Marketplace cho plugin flow-trace-genesis — sinh skill flow-trace local cho project bất kỳ.",
   "owner": {
     "name": "mthang1801",
     "url": "https://github.com/mthang1801"
-  },
-  "metadata": {
-    "description": "Marketplace cho plugin flow-trace-genesis — sinh skill flow-trace local cho project bất kỳ.",
-    "version": "0.1.0"
   },
   "plugins": [
     {

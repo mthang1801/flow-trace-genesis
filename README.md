@@ -61,10 +61,10 @@ Playbook 6 bước, mỗi bước có gate (chi tiết: `plugins/flow-trace-gene
 .claude-plugin/marketplace.json      # marketplace cho Claude Code
 plugins/flow-trace-genesis/
 ├── .claude-plugin/plugin.json
-├── skills/flow-trace-genesis/       # SKILL.md + references/ + render/
-├── commands/flow-trace-genesis.md
+├── skills/flow-trace-genesis/       # SKILL.md (kiêm /flow-trace-genesis) + references/ + render/
 └── .mcp.json                        # serena + markitdown + docling (optional, degrade được)
 installers/                          # install.sh + mapping per-harness
+└── prompts/flow-trace-genesis.md    # prompt cho Codex/OpenCode/Cursor (ngoài plugin surface)
 .agents/                             # governance nội bộ repo này (lean, tự chứa)
 ```
 

@@ -14,13 +14,14 @@
 
 | Slug | Status | Mô tả | Tham chiếu |
 | --- | --- | --- | --- |
-| `bootstrap` | Review | Đã thực thi xong 8 bước v1 (18/19 task; verify tự động pass toàn bộ). Chờ user: (1) test manual 5.2 cài marketplace trong session, (2) lệnh commit. | `.agents/changes/bootstrap/` |
+| `bootstrap` | Done | v1 hoàn tất 19/19 task. Commit `163d24c` (sản phẩm) + fix 5.2 (dedup command/skill, marketplace schema). Plugin validate trên Claude Code thật: Skills (1), MCP (3). | `.agents/changes/bootstrap/` |
 
 ## Execution Queue
 
-1. User test manual 5.2 (`/plugin marketplace add` local) + review sản phẩm v1 → commit khi user yêu cầu.
-2. Golden Go (`~/Repositories/Go/go-core-adapter-service`, user chọn 1 flow gRPC họ thuộc) — change record mới.
-3. Golden Dni → dogfood regenerate Lending.
+1. Golden Go — bãi thử user CHỐT 2026-07-17: `~/Repositories/Go/grpc-go` (đổi từ
+   go-core-adapter-service). User chọn 1 flow gRPC họ thuộc → change record mới.
+2. Golden Dni → dogfood regenerate Lending.
+3. (Optional) smoke test interactive `/plugin marketplace add` trong session Claude Code.
 
 ## Current Risks
 

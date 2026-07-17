@@ -31,9 +31,12 @@
 ## 5. Verification
 
 - [x] 5.1 Governance harness pass
-- [ ] 5.2 Cài thử marketplace local → **PENDING USER (manual)**: `claude plugin` CLI bản này
-      không có lệnh install non-interactive; user chạy trong session Claude Code:
-      `/plugin marketplace add /home/mvt/Repositories/plugins/flow-trace-genesis` rồi
-      `/plugin install flow-trace-genesis@flow-trace-genesis-marketplace`
+- [x] 5.2 Validate plugin trên bản Claude Code đang chạy — qua `claude --plugin-dir <plugin>
+      plugin details flow-trace-genesis`: load OK, MCP 3 server nhận đủ. Phát hiện + fix lệch:
+      (a) commands/ trong plugin bị hợp nhất command/skill → skill trùng tên ×2 → chuyển ra
+      `installers/prompts/`, thêm `argument-hint` vào SKILL.md → Skills (1);
+      (b) marketplace.json đưa `description` lên top-level khớp schema marketplace đã cài
+      trên máy (`~/.claude/plugins/marketplaces/skill-evolver`). Smoke test interactive
+      `/plugin marketplace add` (optional) user có thể chạy thêm.
 - [x] 5.3 `install.sh --dry-run` đúng cho cả 4 target (codex/opencode/cursor/claude)
 - [x] 5.4 Sync progress.md + CHANGELOG.md; grill gate; commit khi user yêu cầu
