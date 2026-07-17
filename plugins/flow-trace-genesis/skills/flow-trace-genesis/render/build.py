@@ -343,6 +343,7 @@ def build(doc_dir):
             sys.exit(f"có fence ```kg nhưng thiếu {gpath} — chạy render/kg/extract.py trước")
         gdata = json.load(open(gpath, encoding='utf-8'))
         js = (open(os.path.join(RENDER, 'assets/cytoscape.min.js'), encoding='utf-8').read()
+              + '\n' + open(os.path.join(RENDER, 'assets/minisearch.umd.js'), encoding='utf-8').read()
               + f'\nwindow.__KG_DATA__ = {json.dumps(gdata, ensure_ascii=False)};\n'
               + open(os.path.join(RENDER, 'assets/kg-init.js'), encoding='utf-8').read()
               + '\n' + js)

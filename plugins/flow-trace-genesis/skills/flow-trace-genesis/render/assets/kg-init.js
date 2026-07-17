@@ -50,6 +50,17 @@
     var kinds = Object.keys(counts).sort();
     kinds.forEach(function (k) { S.kinds[k] = true; });
 
+    // MiniSearch (vendored): full-text + prefix + fuzzy có scoring — primary engine.
+    // Subsequence match tự viết giữ làm fallback cho kiểu gõ tắt (vd "rsba2evf").
+    var mini = null;
+    if (typeof MiniSearch !== 'undefined') {
+      mini = new MiniSearch({ fields: ['name', 'file'], idField: 'id',
+                              searchOptions: { prefix: true, fuzzy: 0.25 } });
+      mini.addAll(data.nodes.map(function (n) {
+        return { id: n.id, name: n.name, file: n.file };
+      }));
+    }
+
     var cy = cytoscape({
       container: el,
       elements: elements,
@@ -122,13 +133,21 @@
 
     function applyFilters() {
       var q = S.search.toLowerCase().replace(/\s+/g, '');
+      var miniHits = null;
+      if (S.search.trim() && mini) {
+        miniHits = {};
+        mini.search(S.search, { prefix: true, fuzzy: 0.25 }).forEach(function (r) {
+          miniHits[r.id] = true;
+        });
+      }
       cy.batch(function () {
         cy.nodes().forEach(function (n) {
           var show = S.kinds[n.data('kind')] !== false;
           if (show && S.verifiedOnly && n.data('v') !== 1) show = false;
           n.style('display', show ? 'element' : 'none');
           if (q) {
-            var hit = fuzzyMatch(q, (n.data('label') || '').toLowerCase()) ||
+            var hit = (miniHits && miniHits[n.id()]) ||
+                      fuzzyMatch(q, (n.data('label') || '').toLowerCase()) ||
                       fuzzyMatch(q, (n.data('file') || '').toLowerCase());
             n.toggleClass('kg-dim', !hit);
           } else n.removeClass('kg-dim');
