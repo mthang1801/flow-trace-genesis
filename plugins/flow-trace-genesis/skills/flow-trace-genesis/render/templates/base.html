@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="icon" href="{{FAVICON}}">
+<!-- Self-contained tuyệt đối: KHÔNG external font/CDN — font stack fallback trong tokens.css -->
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<!-- #app = containing block + internal scroll root, so position:fixed chrome stays
+     inside the doc box even when a renderer injects this markup inline into its own
+     DOM instead of an isolated iframe. -->
+<div id="app">
+
+<!-- ══════════ SIDEBAR ══════════ -->
+<nav id="sb">
+  <div class="sb-logo">
+    <div class="sb-icon">{{LOGO_ICON}}</div>
+    <div><div class="sb-title">{{LOGO_TITLE}}</div><div class="sb-sub">{{LOGO_SUB}}</div></div>
+  </div>
+{{SIDEBAR}}
+</nav>
+
+<!-- ══════════ TOP NAV ══════════ -->
+<nav id="tn">
+{{TOPNAV}}
+</nav>
+
+<main id="main"><div class="content">
+{{SECTIONS}}
+</div></main>
+
+</div><!-- /#app -->
+
+<script>
+{{JS}}
+</script>
+</body>
+</html>

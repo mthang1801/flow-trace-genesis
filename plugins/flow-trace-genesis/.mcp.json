@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "serena": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "ide-assistant"],
+      "_comment": "Evidence tier — semantic code navigation (LSP đa ngôn ngữ). Yêu cầu: uv (https://docs.astral.sh/uv/). Thiếu uv → playbook degrade xuống grep + Read, KHÔNG chặn việc."
+    },
+    "markitdown": {
+      "command": "markitdown-mcp",
+      "args": [],
+      "_comment": "Ingest tier — convert PDF/DOCX/PPTX/XLSX/HTML sang Markdown. Yêu cầu: pip install markitdown-mcp. Thiếu → báo blocker khi user đưa tài liệu rich, không giả vờ đã đọc."
+    },
+    "docling": {
+      "command": "uvx",
+      "args": ["--from", "docling-mcp", "docling-mcp-server"],
+      "_comment": "Ingest tier — layout-aware document parsing (bảng phức tạp, scan). Fallback khi markitdown không đủ. Yêu cầu: uv; model download lần đầu khá nặng."
+    }
+  }
+}

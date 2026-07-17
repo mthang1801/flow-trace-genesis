@@ -1,0 +1,24 @@
+{
+  "name": "flow-trace-genesis-marketplace",
+  "owner": {
+    "name": "mthang1801",
+    "url": "https://github.com/mthang1801"
+  },
+  "metadata": {
+    "description": "Marketplace cho plugin flow-trace-genesis — sinh skill flow-trace local cho project bất kỳ.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "flow-trace-genesis",
+      "source": "./plugins/flow-trace-genesis",
+      "description": "Khảo sát project lạ rồi SINH skill flow-trace local self-contained (CORE + PROFILE, golden-flow gate). Kèm base render md-source → HTML.",
+      "version": "0.1.0",
+      "author": {
+        "name": "mthang1801"
+      },
+      "license": "Apache-2.0",
+      "keywords": ["flow-trace", "code-intelligence", "documentation", "tracing"]
+    }
+  ]
+}
