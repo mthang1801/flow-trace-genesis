@@ -68,7 +68,10 @@ def check(doc_dir):
             fail(f"unbalanced <{tag}>: {o} open vs {c} close")
 
     # 5. Self-contained: chỉ hyperlink (<a href>) được ra ngoài; mọi RESOURCE phải local.
-    html_no_anchors = re.sub(r'<a\s[^>]*>', '', html)
+    #    Strip NỘI DUNG <script> (giữ tag để vẫn bắt <script src=...>): URL trong JS vendored
+    #    (license comment của cytoscape...) chỉ là string, không phải resource load.
+    html_no_script_body = re.sub(r'(<script\b[^>]*>).*?(</script>)', r'\1\2', html, flags=re.S)
+    html_no_anchors = re.sub(r'<a\s[^>]*>', '', html_no_script_body)
     for host in set(re.findall(r'https?://([a-zA-Z0-9.\-]+)', html_no_anchors)):
         if host not in ALLOWED_HOSTS:
             fail(f"external host '{host}' — artifact phải self-contained")
@@ -90,6 +93,20 @@ def check(doc_dir):
     for i in order:
         if i not in ids:
             fail(f"_doc.yml lists '{i}' but no <section id='s-{i}'> in HTML")
+
+    # 8b. Knowledge graph: fence ```kg ↔ graph.json ↔ banner Candidate phải đồng bộ
+    kg_files = [f for f in md_files
+                if re.search(r'^```kg\b', open(os.path.join(abs_dir, f), encoding='utf-8').read(), re.M)]
+    has_graph = os.path.exists(os.path.join(abs_dir, 'graph.json'))
+    if kg_files and not has_graph:
+        fail(f"có fence ```kg ({kg_files}) nhưng thiếu graph.json — chạy render/kg/extract.py")
+    if has_graph and not kg_files:
+        fail("graph.json tồn tại nhưng không md nào dùng fence ```kg — xóa hoặc thêm section")
+    for f in kg_files:
+        if 'Candidate' not in open(os.path.join(abs_dir, f), encoding='utf-8').read():
+            fail(f"{f}: section KG thiếu banner Candidate tier (graph máy sinh phải ghi rõ nguồn gốc)")
+    if kg_files and 'kg-canvas' not in html:
+        fail("md có fence ```kg nhưng HTML không có #kg-canvas — build lại")
 
     # 8. Nhãn suy luận không được rớt: nếu md nguồn có "[AI suy luận" thì HTML cũng phải có
     md_has_inference = any(

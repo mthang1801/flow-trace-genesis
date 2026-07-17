@@ -32,7 +32,7 @@ logo_title: FLOW-TRACE
 logo_sub: <slug> · <project>
 groups:                # sidebar — 3 nhóm chuẩn của template
 - title: Flow
-  items: [overview, sequence, steps, graph]
+  items: [overview, knowledge-graph, sequence, steps, graph]
 - title: Phân tích
   items: [validation, business, failure-modes, security-ops, code-review]
 - title: Meta
@@ -77,6 +77,7 @@ section/nav drift, và **rớt nhãn `[AI suy luận`** khi md nguồn có.
 | `> [!concept]` / `[!example]` | concept box / example card |
 | ` ```ts/js/sql/go title="file.ts" ` | code block highlight + copy button |
 | ` ```mermaid ` | code block giữ nguyên source (copy được; Obsidian/claude.ai render native) |
+| ` ```kg ` (fence rỗng) | canvas knowledge graph tương tác (Cytoscape.js vendored) — data từ `<doc-folder>/graph.json` do `render/kg/extract.py` sinh; thiếu graph.json thì build fail |
 | ` ```refs ` (YAML `{icon,title,desc,url,star}`) | ref-card grid |
 | Bảng md | `.tbl` (cell `code` màu cyan — dùng cho `file:line`) |
 | `### Heading {#anchor-id}` | h3 có id — đích cho `subs` deep-link |
@@ -88,21 +89,42 @@ section/nav drift, và **rớt nhãn `[AI suy luận`** khi md nguồn có.
 callout `> [!type]`; (4) ngôn ngữ ngoài ts/js/sql/go không được highlight (render plain) —
 chấp nhận được, đừng chế thêm highlighter khi chưa cần.
 
-## Mapping section report-template → section md
+## Mapping section report-template → section md (có KG từ 2026-07-18)
 
 | Section report | File md | level/badge |
 | --- | --- | --- |
 | Header meta + 1. Tóm tắt | `01-overview.md` — meta thành bảng, không dùng blockquote | `draft` (→ `verified` sau golden-flow) |
-| 2. Sequence diagram | `02-sequence.md` — inline SVG (flowcard) + mermaid fence nguồn đầy đủ | `deterministic` |
-| 3. Bảng bước | `03-steps.md` | `deterministic` |
-| 4. Graph quan hệ | `04-graph.md` — inline SVG + mermaid fence | `deterministic` |
-| 5. Validation & Rules | `05-validation.md` | `deterministic` |
-| 6. Business spec ngược (+6b PRD nếu có) | `06-business.md` — mở đầu bằng `> [!inference]` chứa nguyên văn `[AI suy luận — cần domain owner xác nhận]` | `inference` |
-| 7. Failure modes | `07-failure-modes.md` | `advanced`, badge tùy số archetype |
-| 8. Security & Ops | `08-security-ops.md` — mở đầu `> [!inference]` | `inference` |
-| 9. Ghi chú code review | `09-code-review.md` | `basic` |
-| 10. Chưa xác định / chưa trace | `10-open-items.md` — bắt buộc tồn tại, kể cả "không có" | `basic` |
-| 11. Lịch sử trace | `11-history.md` | `basic` |
+| 2. Knowledge graph (máy sinh) | `02-knowledge-graph.md` — banner `> [!warn]` ghi rõ **Candidate tier** (check.py enforce) + fence ` ```kg ` | `basic`, badge `CANDIDATE` |
+| 3. Sequence diagram | `03-sequence.md` — inline SVG (flowcard) + mermaid fence nguồn đầy đủ | `deterministic` |
+| 4. Bảng bước | `04-steps.md` | `deterministic` |
+| 5. Graph quan hệ (vẽ tay) | `05-graph.md` — inline SVG + mermaid fence | `deterministic` |
+| 6. Validation & Rules | `06-validation.md` | `deterministic` |
+| 7. Business spec ngược (+PRD nếu có) | `07-business.md` — mở đầu bằng `> [!inference]` chứa nguyên văn `[AI suy luận — cần domain owner xác nhận]` | `inference` |
+| 8. Failure modes | `08-failure-modes.md` | `advanced`, badge tùy số archetype |
+| 9. Security & Ops | `09-security-ops.md` — mở đầu `> [!inference]` | `inference` |
+| 10. Ghi chú code review | `10-code-review.md` | `basic` |
+| 11. Chưa xác định / chưa trace | `11-open-items.md` — bắt buộc tồn tại, kể cả "không có" | `basic` |
+| 12. Lịch sử trace | `12-history.md` | `basic` |
+
+## Knowledge graph (section 02) — pipeline script-first, ~0 token
+
+1. Seeds = tên symbol trong bảng bước (đã Read); mỗi repo GitNexus một danh sách.
+2. Chạy extractor (KHÔNG để agent đọc/chép graph data — token gần 0):
+
+```bash
+python3 <skill-dir>/render/kg/extract.py --doc {{OUTPUT_DIR}}<slug> \
+  --repo <gitnexus-repo> --seeds "ClassA,MethodB@path-substring" \
+  [--repo <repo2> --seeds "..."] [--hops 2] [--cap 200]
+```
+
+3. `02-knowledge-graph.md`: banner Candidate + fence ` ```kg ` (rỗng). Build tự nhúng
+   cytoscape.min.js + graph.json (chỉ doc có fence kg mới chịu +~430KB).
+4. Repo chưa có index GitNexus → `npx -y gitnexus@<ver> analyze` trước; version CLI phải
+   đọc được storage version của index (lỗi "Database file version" = drift — dùng bản mới
+   hơn hoặc re-analyze; extractor có `--gitnexus-version`).
+5. Render 2 tông: node/edge trùng seeds (bảng bước) = verified sáng, k-hop = candidate mờ
+   nét đứt. Cross-repo edge chưa có ở v1 — nói rõ trong section. Repo không có index thì
+   BỎ section này và ghi chú (trừ khi governance đích yêu cầu bắt buộc analyze).
 
 ## Ràng buộc (không đổi)
 

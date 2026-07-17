@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # install.sh — cài skill flow-trace-genesis vào harness ngoài Claude Code marketplace.
-# Usage: ./installers/install.sh --target codex|opencode|cursor|claude [--dry-run]
+# Usage: ./installers/install.sh --target codex|opencode|cursor|antigravity|claude [--dry-run]
 # v1 chủ đích đơn giản: copy file đúng layout từng harness (mapping: installers/README.md).
 set -euo pipefail
 
@@ -29,9 +29,12 @@ case "$TARGET" in
             CMD_DST="$HOME/.codex/prompts/flow-trace-genesis.md" ;;
   opencode) SKILL_DST="$HOME/.config/opencode/skills/flow-trace-genesis"
             CMD_DST="$HOME/.config/opencode/commands/flow-trace-genesis.md" ;;
-  cursor)   SKILL_DST="$HOME/.cursor/skills/flow-trace-genesis"
+  cursor)   SKILL_DST="$HOME/.cursor/skills-cursor/flow-trace-genesis"  # Cursor Agent Skills (native)
             CMD_DST="$HOME/.cursor/commands/flow-trace-genesis.md" ;;
-  *) echo "cần --target codex|opencode|cursor|claude (mapping: installers/README.md)" >&2; exit 1 ;;
+  antigravity)
+            SKILL_DST="$HOME/.gemini/skills/flow-trace-genesis"  # Antigravity đọc qua ~/.gemini/GEMINI.md
+            CMD_DST="" ;;
+  *) echo "cần --target codex|opencode|cursor|antigravity|claude (mapping: installers/README.md)" >&2; exit 1 ;;
 esac
 
 [ -d "$SKILL_SRC" ] || { echo "không thấy skill source: $SKILL_SRC" >&2; exit 1; }
@@ -41,7 +44,7 @@ echo "[install] skill  : $SKILL_SRC -> $SKILL_DST"
 if [ -n "$CMD_DST" ]; then
   echo "[install] command: $CMD_SRC -> $CMD_DST"
 else
-  echo "[install] command: (bỏ qua — Claude Code dùng thẳng SKILL.md làm /flow-trace-genesis)"
+  echo "[install] command: (bỏ qua — harness này dùng thẳng SKILL.md, không cần command file riêng)"
 fi
 
 if [ -e "$SKILL_DST" ]; then
@@ -63,3 +66,7 @@ if [ -n "$CMD_DST" ]; then
 fi
 echo "[install] xong. Kiểm tra harness đọc được skill (xem installers/README.md — mục verify per-harness)."
 echo "[install] Lưu ý: MCP bundle (serena/markitdown/docling) KHÔNG tự cài — xem plugins/flow-trace-genesis/.mcp.json."
+if [ "$TARGET" = "antigravity" ]; then
+  echo "[install] Antigravity: script KHÔNG tự sửa ~/.gemini/GEMINI.md — tự thêm dòng sau vào đó:"
+  echo "          @./skills/flow-trace-genesis/SKILL.md"
+fi

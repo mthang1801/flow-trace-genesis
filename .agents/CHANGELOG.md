@@ -18,6 +18,59 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — KG control panel + hỗ trợ Cursor/Antigravity + README cộng đồng
+
+**Loại**: Feature / Distribution / Docs
+
+**Thay đổi**:
+- Sync KG iteration 2 từ Lending: control panel kiểu Obsidian graph view (search, filter
+  loại node + verified-only, slider node-size/link-thickness/text-fade, re-layout/fit/
+  reset); content 1560px, canvas 680px.
+- Installer xác minh trên máy thật: **Cursor có Agent Skills native** →
+  `~/.cursor/skills-cursor/` (sửa path cũ sai `~/.cursor/skills/`); thêm target
+  **antigravity** → `~/.gemini/skills/` + in hướng dẫn thêm dòng
+  `@./skills/flow-trace-genesis/SKILL.md` vào `~/.gemini/GEMINI.md` (không tự sửa file
+  user). Dry-run pass cả 6 target.
+- README viết lại theo hướng cộng đồng: bỏ toàn bộ tham chiếu project test local,
+  thêm "Vì sao cần nó", nguyên tắc cứng, yêu cầu, đóng góp.
+
+**Trạng thái**: `Done`.
+
+### 2026-07-18 — Sync tính năng Knowledge Graph (section 02, Candidate tier)
+
+**Loại**: Feature (sync từ Lending — luật không-fork)
+
+**Thay đổi**:
+- `render/` nhận bản mới: `kg/extract.py` (GitNexus cypher, k-hop từ seeds, graph.json,
+  pin `gitnexus@1.6.6` đọc được storage v40+v41, chống cắt stdout 64KB),
+  `assets/cytoscape.min.js` 3.34.0 + `kg-init.js` (2 tông verified/candidate),
+  build.py fence ` ```kg ` nhúng có điều kiện, check.py 4 check KG.
+- `references/html-render.md`: template 12 section (KG=02 sau Tóm tắt), pipeline
+  script-first ~0 token, luật degrade khi repo đích không có index (trừ khi governance
+  đích bắt buộc analyze).
+- Golden grpc-go đã dùng thật: analyze 1:57ph (crash cleanup — index vẫn hợp lệ),
+  build+check pass 12 sections.
+
+**Trạng thái**: `Done` — chi tiết evidence bên Lending
+(`.agents/changes/flow-trace-knowledge-graph/`).
+
+### 2026-07-18 — Golden Go: genesis chạy end-to-end lần đầu (grpc-go)
+
+**Loại**: Dogfood / Verification
+
+**Thay đổi**:
+- Chạy đủ playbook 6 bước trên `grpc-go@7d870454`: intake (không flow-trace local),
+  khảo sát tool thật (gopls/uvx có; ast-grep/rg không — degrade grep), questionnaire
+  Q1-Q10 với bằng chứng file:line, sinh skill `.claude/skills/flow-trace/` (CORE+PROFILE
+  grpc-go: registry init() thay DI, HTTP/2 wire thay broker, gotchas G1-G5 có citation),
+  cài sau confirm vị trí (AskUserQuestion), trace golden `unary-invoke-client`.
+- Cẩm nang golden: 24 bước file:line, 12 rule validation, 8 failure mode — finding đắt
+  nhất: unary `SendMsg` trả `nil` khi transport write lỗi (`stream.go:1147-1155`).
+  Build + check pass ngay lần đầu (76302 bytes, 11 sections).
+
+**Trạng thái**: `Review` — chờ user chấm gate 6b (Draft→Verified).
+
+
 ### 2026-07-17 — 5.2 validated + fix lệch manifest; bootstrap Done
 
 **Loại**: Fix / Verification

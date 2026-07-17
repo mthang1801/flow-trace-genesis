@@ -14,7 +14,8 @@ nhanh** — v1 chủ đích chỉ copy-file + bảng mapping này, không abstra
 | `claude` | `~/.claude/skills/flow-trace-genesis/` | (không copy — SKILL.md tự là `/flow-trace-genesis`, Claude Code đã hợp nhất command/skill; copy thêm command file sẽ tạo skill trùng tên) | Skill user-global (dùng khi không muốn marketplace) |
 | `codex` | `~/.codex/skills/flow-trace-genesis/` | `~/.codex/prompts/flow-trace-genesis.md` | Prompt `/flow-trace-genesis`; trỏ skill từ `~/.codex/AGENTS.md` nếu bản Codex chưa tự đọc skills dir |
 | `opencode` | `~/.config/opencode/skills/flow-trace-genesis/` | `~/.config/opencode/commands/flow-trace-genesis.md` | Command custom; wire skill qua AGENTS.md/config nếu cần |
-| `cursor` | `~/.cursor/skills/flow-trace-genesis/` | `~/.cursor/commands/flow-trace-genesis.md` | Cursor chưa có chuẩn skills — thêm rule trong `.cursor/rules` trỏ tới SKILL.md |
+| `cursor` | `~/.cursor/skills-cursor/flow-trace-genesis/` | `~/.cursor/commands/flow-trace-genesis.md` | Cursor Agent Skills (native, cùng format SKILL.md) — Cursor tự nhận theo description |
+| `antigravity` | `~/.gemini/skills/flow-trace-genesis/` | (không copy) | Antigravity đọc global rules `~/.gemini/GEMINI.md` — thêm dòng `@./skills/flow-trace-genesis/SKILL.md` vào đó (script chỉ in hướng dẫn, không tự sửa file của bạn) |
 
 ## Verify sau khi cài (per-harness)
 

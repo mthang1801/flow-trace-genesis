@@ -201,6 +201,13 @@ def render_md(body, ctx):
             body_code = '\n'.join(code)
             if lang == 'refs':
                 out.append(render_refs(yaml.safe_load(body_code)))
+            elif lang == 'kg':
+                # fence ```kg → canvas knowledge graph; data từ <doc-folder>/graph.json
+                # (sinh bởi render/kg/extract.py), nhúng lúc assembly khi ctx['used'] có 'kg'.
+                ctx['used'].add('kg')
+                out.append('<div class="kg-wrap"><div id="kg-canvas"></div>'
+                           '<div id="kg-info" class="kg-info">Click một node để xem file:line — '
+                           'kéo/zoom chuột để duyệt.</div></div>')
             else:
                 out.append(render_code(lang, title, body_code))
             continue
@@ -288,7 +295,7 @@ def build(doc_dir):
             fm.setdefault('id', re.sub(r'^\d+-', '', fn[:-3]))
             sec[fm['id']] = {'fm': fm, 'body': body}
 
-    ctx = {'md_dir': abs_dir, 'out_dir': out_dir}
+    ctx = {'md_dir': abs_dir, 'out_dir': out_dir, 'used': set()}
     order = [i for g in doc['groups'] for i in g['items']]
     missing = [i for i in order if i not in sec]
     if missing:
@@ -330,6 +337,15 @@ def build(doc_dir):
 
     css = open(os.path.join(RENDER, 'assets/tokens.css'), encoding='utf-8').read()
     js = open(os.path.join(RENDER, 'assets/engine.js'), encoding='utf-8').read()
+    if 'kg' in ctx['used']:
+        gpath = os.path.join(abs_dir, 'graph.json')
+        if not os.path.exists(gpath):
+            sys.exit(f"có fence ```kg nhưng thiếu {gpath} — chạy render/kg/extract.py trước")
+        gdata = json.load(open(gpath, encoding='utf-8'))
+        js = (open(os.path.join(RENDER, 'assets/cytoscape.min.js'), encoding='utf-8').read()
+              + f'\nwindow.__KG_DATA__ = {json.dumps(gdata, ensure_ascii=False)};\n'
+              + open(os.path.join(RENDER, 'assets/kg-init.js'), encoding='utf-8').read()
+              + '\n' + js)
     submap = {}
     for sec_id, subs in (doc.get('subs') or {}).items():
         for sub in (subs or []):
