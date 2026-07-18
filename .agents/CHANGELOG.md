@@ -18,6 +18,29 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — Gỡ CI: tài khoản GitHub bị khoá billing, không phải lỗi workflow
+
+**Loại**: Revert (blocked by external constraint, không phải bug của repo)
+
+**Thay đổi**:
+- `ci.yml` (P1, commit trước) chạy đúng cục bộ (build+check golden, doctor.sh,
+  shellcheck, render-sync guard — cả 4 pass khi test local) nhưng **mọi run trên GitHub
+  đều fail trong <1 giây, không được gán runner**. Chẩn đoán qua API: `steps: []`,
+  `runner_name: ""`, rerun cùng lỗi → không phải lỗi cú pháp/workflow. User check UI xác
+  nhận nguyên nhân thật: *"The job was not started because your account is locked due to
+  a billing issue"* — GitHub yêu cầu payment method hợp lệ dù usage thực tế $0 (đã được
+  included-usage bù đủ). User chọn không thêm payment method → gỡ CI thay vì chờ mở khoá.
+- Gỡ: `.github/workflows/ci.yml`, badge CI khỏi README EN/VI, câu "these are exactly what
+  CI runs" trong CONTRIBUTING.md (thay bằng "không có CI gate tự động — tự chạy trước khi
+  mở PR"), tham chiếu "CI's render-sync job" (thay bằng hướng dẫn chạy tay).
+- **KHÔNG gỡ**: `scripts/check-render-sync.sh` (vẫn dùng tay được, còn nguyên giá trị),
+  Pages (`pages-build-deployment` không đi qua hàng đợi Actions bị khoá — verify bằng 3
+  lần build Pages `success` ngay trong lúc billing đang khoá), tag/release v0.1.0.
+- Nếu sau này user tự gỡ khoá billing (thêm payment method hoặc GitHub Support xử lý),
+  `ci.yml` có thể phục hồi nguyên trạng từ git history (commit `1c90ce2`).
+
+**Trạng thái**: `Done` (P1 coi như rollback — không tính vào punch list hoàn thành).
+
 ### 2026-07-18 — CI, tag/release, no-fork guard, Pages demo, CONTRIBUTING
 
 **Loại**: Distribution / DX / Docs (punch list P1-P5 sau audit repo public)

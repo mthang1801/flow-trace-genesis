@@ -4,6 +4,8 @@
 
 ## Activity Log
 
+| 2026-07-18 | claude | Gỡ CI (P1 rollback): tài khoản GitHub bị khoá billing (không phải lỗi workflow — verify bằng annotations UI), user chọn không thêm payment method. Gỡ ci.yml + badge + tham chiếu CI trong CONTRIBUTING; giữ nguyên scripts/check-render-sync.sh, Pages, release. | `.github/`, `CONTRIBUTING.md`, `README*.md` |
+
 | 2026-07-18 | claude | Punch-list P1/P3/P4/P5 sau audit repo public: CI 4 job (render/doctor/shellcheck/render-sync), badge CI; `scripts/check-render-sync.sh` guard chống trôi render/ (verify thật, wire CI); `.nojekyll` + link live demo GitHub Pages; CONTRIBUTING.md + PR template. Mermaid lint hoãn (chưa tới ngưỡng). | `.github/`, `scripts/`, `CONTRIBUTING.md` |
 
 | 2026-07-18 | claude | **Security**: gỡ `profiles/lending.md` (internal, chưa sanitize) khỏi repo public — backup vào Lending private, `git filter-repo` xoá khỏi toàn bộ history, force-push. SKILL.md đổi mẫu vàng sang `examples/grpc-go` (public-safe). | git history rewrite, `SKILL.md` |

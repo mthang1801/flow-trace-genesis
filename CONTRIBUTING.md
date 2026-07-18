@@ -13,9 +13,9 @@ first.
   evidence; a golden flow that actually built and passed `check.py` is.
 - **`render/` has one canonical copy** (`plugins/flow-trace-genesis/skills/flow-trace-genesis/render/`).
   If you're fixing a render bug found while using a *generated* skill elsewhere, port the
-  fix back here — don't patch it only in the generated copy. CI's `render-sync` job will
-  catch a second copy appearing in-repo and diff it against the canonical one; use
-  `scripts/check-render-sync.sh <dir1> <dir2> ...` to check any two copies yourself.
+  fix back here — don't patch it only in the generated copy. Run
+  `scripts/check-render-sync.sh <dir1> <dir2> ...` yourself if you have more than one copy
+  checked out (e.g. this repo vs. a project where you installed the generated skill).
 - **Keep the dependency floor at `python3` + PyYAML.** Anything else (ripgrep, ast-grep,
   a language server, node/npx, uv) is optional and must degrade gracefully when absent —
   see `installers/doctor.sh` for the tier a new tool belongs in.
@@ -23,13 +23,16 @@ first.
   internal service maps, partner integration names, or anything from a private
   `profiles/*.md` you authored for your own project — those stay local/private.
 - **Heavy samples go on Releases, not in git.** `examples/` is for one small, currently
-  actively-referenced sample (README links to it, CI builds it). A new full sample
+  actively-referenced sample (README links to it). A new full sample
   (generated skill + handbook + built HTML, easily several MB) should ship as a
   [release asset](https://github.com/mthang1801/flow-trace-genesis/releases) instead of
   a repo commit — attach it to a release and link it from the README/PR, the way the
   `v0.1.0` grpc-go sample HTML is attached. Keeps `git clone` fast as samples accumulate.
 
 ## Running the checks locally
+
+There's no automated CI gate on this repo right now — run these yourself before opening
+a PR, and mention in the PR description that you ran them (see the PR template):
 
 ```bash
 python3 -m pip install pyyaml
@@ -38,9 +41,6 @@ python3 plugins/flow-trace-genesis/skills/flow-trace-genesis/render/check.py exa
 ./installers/doctor.sh
 shellcheck installers/*.sh scripts/*.sh
 ```
-
-These are exactly what CI runs (`.github/workflows/ci.yml`) — green locally means green
-in the PR check.
 
 ## Commit style
 

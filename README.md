@@ -1,6 +1,5 @@
 # flow-trace-genesis
 
-[![CI](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml/badge.svg)](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/mthang1801/flow-trace-genesis?color=blue)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-brightgreen)](plugins/flow-trace-genesis/.claude-plugin/plugin.json)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](https://docs.anthropic.com/en/docs/claude-code/plugins)
