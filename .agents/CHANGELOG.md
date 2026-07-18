@@ -18,6 +18,22 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — examples/grpc-go + README "See it in action"
+
+**Loại**: Docs / Distribution
+
+**Thay đổi**:
+- `examples/grpc-go/`: sample công khai từ lần chạy thật trên grpc-go@7d870454 — skill
+  sinh ra (SKILL.md CORE+PROFILE), md-source 12 section + graph.json, HTML self-contained
+  4.3MB, README giải thích cách sinh + cách rebuild. grpc-go là OSS công khai nên đưa
+  được (profile Lending vẫn INTERNAL).
+- Screenshot 4 section (overview/KG/sequence/steps) chụp từ HTML mở qua file:// (tự
+  chứng minh self-contained) → `docs/images/`.
+- README EN/VI: section "See it in action"/"Xem kết quả thật" (3 ảnh + link sample +
+  link tải HTML), intro trỏ anchor, Repo layout thêm examples/ + docs/images/ + doctor.sh.
+
+**Trạng thái**: `Done`.
+
 ### 2026-07-18 — installers/doctor.sh: kiểm kê + cài tool opt-in
 
 **Loại**: Distribution / DX

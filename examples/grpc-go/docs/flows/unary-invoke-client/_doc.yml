@@ -1,0 +1,28 @@
+title: Flow unary-invoke-client — Unary RPC phía client (Invoke path)
+description: Cẩm nang flow-trace vòng đời một unary RPC phía client trong grpc-go —
+  từ generated code qua ClientConn.Invoke, interceptor chain, newClientStream (resolver
+  wait, config selector, retry setup), picker, csAttempt tới http2Client và wire; kèm
+  validation, failure modes (nuốt lỗi SendMsg, context leak #1818, retry buffer) và ops.
+favicon: Rc
+logo_icon: Rc
+logo_title: FLOW-TRACE
+logo_sub: unary-invoke-client · grpc-go
+groups:
+- title: Flow
+  items:
+  - overview
+  - knowledge-graph
+  - sequence
+  - steps
+  - graph
+- title: Phân tích
+  items:
+  - validation
+  - business
+  - failure-modes
+  - security-ops
+  - code-review
+- title: Meta
+  items:
+  - open-items
+  - history

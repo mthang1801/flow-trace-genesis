@@ -1,0 +1,3809 @@
+{
+ "nodes": [
+  {
+   "id": "grpc-go::Function:balancer/grpclb/grpclb_test.go:startBackends",
+   "name": "startBackends",
+   "label": "Function",
+   "file": "balancer/grpclb/grpclb_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:balancer/rls/internal/keys/builder_test.go:TestRLSKey",
+   "name": "TestRLSKey",
+   "label": "Function",
+   "file": "balancer/rls/internal/keys/builder_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:benchmark/benchmain/main.go:setupStream",
+   "name": "setupStream",
+   "label": "Function",
+   "file": "benchmark/benchmain/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:call.go:Invoke",
+   "name": "Invoke",
+   "label": "Function",
+   "file": "call.go",
+   "line": "58",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Function:call.go:combine",
+   "name": "combine",
+   "label": "Function",
+   "file": "call.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:call.go:invoke",
+   "name": "invoke",
+   "label": "Function",
+   "file": "call.go",
+   "line": "64",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Function:clientconn.go:NewClient",
+   "name": "NewClient",
+   "label": "Function",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:encoding/compressor_test.go:setupGzipWrapCompressor",
+   "name": "setupGzipWrapCompressor",
+   "label": "Function",
+   "file": "encoding/compressor_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "name": "GetCompressor",
+   "label": "Function",
+   "file": "encoding/encoding.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:encoding/gzip/gzip.go:SetLevel",
+   "name": "SetLevel",
+   "label": "Function",
+   "file": "encoding/gzip/gzip.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata/client/main.go:bidirectionalWithMetadata",
+   "name": "bidirectionalWithMetadata",
+   "label": "Function",
+   "file": "examples/features/metadata/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata/client/main.go:clientStreamWithMetadata",
+   "name": "clientStreamWithMetadata",
+   "label": "Function",
+   "file": "examples/features/metadata/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata/client/main.go:serverStreamingWithMetadata",
+   "name": "serverStreamingWithMetadata",
+   "label": "Function",
+   "file": "examples/features/metadata/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata/client/main.go:unaryCallWithMetadata",
+   "name": "unaryCallWithMetadata",
+   "label": "Function",
+   "file": "examples/features/metadata/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata_interceptor/server/main.go:streamInterceptor",
+   "name": "streamInterceptor",
+   "label": "Function",
+   "file": "examples/features/metadata_interceptor/server/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:examples/features/metadata_interceptor/server/main.go:unaryInterceptor",
+   "name": "unaryInterceptor",
+   "label": "Function",
+   "file": "examples/features/metadata_interceptor/server/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/binarylog/binarylog.go:GetMethodLogger",
+   "name": "GetMethodLogger",
+   "label": "Function",
+   "file": "internal/binarylog/binarylog.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "name": "IsOn",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:RegisterChannel",
+   "name": "RegisterChannel",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:RegisterServer",
+   "name": "RegisterServer",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:RegisterSocket",
+   "name": "RegisterSocket",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:RegisterSubChannel",
+   "name": "RegisterSubChannel",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/funcs.go:RemoveEntry",
+   "name": "RemoveEntry",
+   "label": "Function",
+   "file": "internal/channelz/funcs.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "name": "Infof",
+   "label": "Function",
+   "file": "internal/channelz/logging.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/logging.go:Warningf",
+   "name": "Warningf",
+   "label": "Function",
+   "file": "internal/channelz/logging.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/channelz/trace.go:AddTraceEvent",
+   "name": "AddTraceEvent",
+   "label": "Function",
+   "file": "internal/channelz/trace.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata.go:Validate",
+   "name": "Validate",
+   "label": "Function",
+   "file": "internal/metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata.go:ValidateKey",
+   "name": "ValidateKey",
+   "label": "Function",
+   "file": "internal/metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata.go:ValidatePair",
+   "name": "ValidatePair",
+   "label": "Function",
+   "file": "internal/metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata.go:hasNotPrintable",
+   "name": "hasNotPrintable",
+   "label": "Function",
+   "file": "internal/metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata_test.go:TestGet",
+   "name": "TestGet",
+   "label": "Function",
+   "file": "internal/metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata_test.go:TestSet",
+   "name": "TestSet",
+   "label": "Function",
+   "file": "internal/metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/metadata/metadata_test.go:TestValidate",
+   "name": "TestValidate",
+   "label": "Function",
+   "file": "internal/metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/status/status.go:IsRestrictedControlPlaneCode",
+   "name": "IsRestrictedControlPlaneCode",
+   "label": "Function",
+   "file": "internal/status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/handler_server.go:NewServerHandlerTransport",
+   "name": "NewServerHandlerTransport",
+   "label": "Function",
+   "file": "internal/transport/handler_server.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/http2_client.go:NewHTTP2Client",
+   "name": "NewHTTP2Client",
+   "label": "Function",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/keepalive_test.go:checkForHealthyStream",
+   "name": "checkForHealthyStream",
+   "label": "Function",
+   "file": "internal/transport/keepalive_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/keepalive_test.go:pollForStreamCreationError",
+   "name": "pollForStreamCreationError",
+   "label": "Function",
+   "file": "internal/transport/keepalive_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/keepalive_test.go:waitForGoAwayTooManyPings",
+   "name": "waitForGoAwayTooManyPings",
+   "label": "Function",
+   "file": "internal/transport/keepalive_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/transport/transport.go:ContextErr",
+   "name": "ContextErr",
+   "label": "Function",
+   "file": "internal/transport/transport.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/httpfilter/fault/fault.go:injectAbort",
+   "name": "injectAbort",
+   "label": "Function",
+   "file": "internal/xds/httpfilter/fault/fault.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/httpfilter/fault/fault.go:injectDelay",
+   "name": "injectDelay",
+   "label": "Function",
+   "file": "internal/xds/httpfilter/fault/fault.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderExactMatcherMatch",
+   "name": "TestHeaderExactMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderPrefixMatcherMatch",
+   "name": "TestHeaderPrefixMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderPresentMatcherMatch",
+   "name": "TestHeaderPresentMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderRangeMatcherMatch",
+   "name": "TestHeaderRangeMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderRegexMatcherMatch",
+   "name": "TestHeaderRegexMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderStringMatch",
+   "name": "TestHeaderStringMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderSuffixMatcherMatch",
+   "name": "TestHeaderSuffixMatcherMatch",
+   "label": "Function",
+   "file": "internal/xds/matcher/matcher_header_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:interop/xds/client/client.go:parseRPCMetadata",
+   "name": "parseRPCMetadata",
+   "label": "Function",
+   "file": "interop/xds/client/client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "name": "FromOutgoingContext",
+   "label": "Function",
+   "file": "metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "name": "Pairs",
+   "label": "Function",
+   "file": "metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata.go:copyOf",
+   "name": "copyOf",
+   "label": "Function",
+   "file": "metadata/metadata.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata_test.go:BenchmarkFromIncomingContext",
+   "name": "BenchmarkFromIncomingContext",
+   "label": "Function",
+   "file": "metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata_test.go:BenchmarkFromOutgoingContext",
+   "name": "BenchmarkFromOutgoingContext",
+   "label": "Function",
+   "file": "metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata_test.go:BenchmarkValueFromIncomingContext",
+   "name": "BenchmarkValueFromIncomingContext",
+   "label": "Function",
+   "file": "metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:metadata/metadata_test.go:Benchmark_AddingMetadata_ContextManipulationApproach",
+   "name": "Benchmark_AddingMetadata_ContextManipulationApproach",
+   "label": "Function",
+   "file": "metadata/metadata_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:peer/peer.go:NewContext",
+   "name": "NewContext",
+   "label": "Function",
+   "file": "peer/peer.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:peer/peer_test.go:TestPeerStringer",
+   "name": "TestPeerStringer",
+   "label": "Function",
+   "file": "peer/peer_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:picker_wrapper.go:doneChannelzWrapper",
+   "name": "doneChannelzWrapper",
+   "label": "Function",
+   "file": "picker_wrapper.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:OnFinish",
+   "name": "OnFinish",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:acceptedCompressorAllows",
+   "name": "acceptedCompressorAllows",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:defaultCallInfo",
+   "name": "defaultCallInfo",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:outPayload",
+   "name": "outPayload",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:recv",
+   "name": "recv",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "name": "setCallInfoCodec",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "name": "toRPCErr",
+   "label": "Function",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:service_config.go:getMaxSize",
+   "name": "getMaxSize",
+   "label": "Function",
+   "file": "service_config.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:stats/stats_test.go:getOutgoingStats",
+   "name": "getOutgoingStats",
+   "label": "Function",
+   "file": "stats/stats_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:status/status.go:Code",
+   "name": "Code",
+   "label": "Function",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:status/status.go:Error",
+   "name": "Error",
+   "label": "Function",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:status/status.go:Errorf",
+   "name": "Errorf",
+   "label": "Function",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:status/status.go:FromContextError",
+   "name": "FromContextError",
+   "label": "Function",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:status/status.go:FromError",
+   "name": "FromError",
+   "label": "Function",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:stream.go:endOfClientStream",
+   "name": "endOfClientStream",
+   "label": "Function",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Function:stream.go:newClientStream",
+   "name": "newClientStream",
+   "label": "Function",
+   "file": "stream.go",
+   "line": "212",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "name": "newClientStreamWithParams",
+   "label": "Function",
+   "file": "stream.go",
+   "line": "301",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Function:stream.go:prepareMsg",
+   "name": "prepareMsg",
+   "label": "Function",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Interface:stream.go:ClientStream",
+   "name": "ClientStream",
+   "label": "Interface",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Interface:stream.go:ServerStream",
+   "name": "ServerStream",
+   "label": "Interface",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Interface:stream.go:Stream",
+   "name": "Stream",
+   "label": "Interface",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/grpclb/grpclb_remote_balancer.go:lbBalancer.processServerList#1",
+   "name": "lbBalancer.processServerList",
+   "label": "Method",
+   "file": "balancer/grpclb/grpclb_remote_balancer.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/picker.go:picker.Pick#1",
+   "name": "picker.Pick",
+   "label": "Method",
+   "file": "balancer/ringhash/picker.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicks#1",
+   "name": "s.TestRingHash_ContinuesConnectingWithoutPicks",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicksToMultipleSubConnsConcurrently#1",
+   "name": "s.TestRingHash_ContinuesConnectingWithoutPicksToMultipleSubConnsConcurrently",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesPastTerminalPolicyThatDoesNotProduceResult#1",
+   "name": "s.TestRingHash_ContinuesPastTerminalPolicyThatDoesNotProduceResult",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_EndpointHashKey#1",
+   "name": "s.TestRingHash_EndpointHashKey",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_FixedHashingTerminalPolicy#1",
+   "name": "s.TestRingHash_FixedHashingTerminalPolicy",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_HeaderHashing#1",
+   "name": "s.TestRingHash_HeaderHashing",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_HeaderHashingWithRegexRewrite#1",
+   "name": "s.TestRingHash_HeaderHashingWithRegexRewrite",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenEndpointEntersIdle#1",
+   "name": "s.TestRingHash_RecoverWhenEndpointEntersIdle",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenResolverRemovesEndpoint#1",
+   "name": "s.TestRingHash_RecoverWhenResolverRemovesEndpoint",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ReorderAddressessWithinEndpoint#1",
+   "name": "s.TestRingHash_ReorderAddressessWithinEndpoint",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RequestHashKey#1",
+   "name": "s.TestRingHash_RequestHashKey",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_SwitchToLowerPriorityAndThenBack#1",
+   "name": "s.TestRingHash_SwitchToLowerPriorityAndThenBack",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_TransientFailureCheckNextOne#1",
+   "name": "s.TestRingHash_TransientFailureCheckNextOne",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_TransientFailureSkipToAvailableReady#1",
+   "name": "s.TestRingHash_TransientFailureSkipToAvailableReady",
+   "label": "Method",
+   "file": "balancer/ringhash/ringhash_e2e_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/rls/picker.go:rlsPicker.Pick#1",
+   "name": "rlsPicker.Pick",
+   "label": "Method",
+   "file": "balancer/rls/picker.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer/rls/picker.go:rlsPicker.delegateToChildPoliciesLocked#2",
+   "name": "rlsPicker.delegateToChildPoliciesLocked",
+   "label": "Method",
+   "file": "balancer/rls/picker.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "name": "acBalancerWrapper.Invoke",
+   "label": "Method",
+   "file": "balancer_wrapper.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.NewStream",
+   "name": "acBalancerWrapper.NewStream",
+   "label": "Method",
+   "file": "balancer_wrapper.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer_wrapper.go:ccBalancerWrapper.NewSubConn#2",
+   "name": "ccBalancerWrapper.NewSubConn",
+   "label": "Method",
+   "file": "balancer_wrapper.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:balancer_wrapper.go:ccBalancerWrapper.updateClientConnState#1",
+   "name": "ccBalancerWrapper.updateClientConnState",
+   "label": "Method",
+   "file": "balancer_wrapper.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:binarylog/binarylog_end2end_test.go:s.TestCanceledStatus#1",
+   "name": "s.TestCanceledStatus",
+   "label": "Method",
+   "file": "binarylog/binarylog_end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:call.go:ClientConn.Invoke",
+   "name": "Invoke",
+   "label": "Method",
+   "file": "call.go",
+   "line": "28",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:ClientConn.incrCallsFailed#0",
+   "name": "ClientConn.incrCallsFailed",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:ClientConn.incrCallsStarted#0",
+   "name": "ClientConn.incrCallsStarted",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:ClientConn.incrCallsSucceeded#0",
+   "name": "ClientConn.incrCallsSucceeded",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:ClientConn.updateResolverStateAndUnlock#2",
+   "name": "ClientConn.updateResolverStateAndUnlock",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:ClientConn.waitForResolvedAddrs#1",
+   "name": "ClientConn.waitForResolvedAddrs",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:addrConn.createTransport#4",
+   "name": "addrConn.createTransport",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:addrConn.getReadyTransport#0",
+   "name": "addrConn.getReadyTransport",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:addrConn.tryAllAddrs#3",
+   "name": "addrConn.tryAllAddrs",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:addrConn.updateAddrs#1",
+   "name": "addrConn.updateAddrs",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:addrConn.updateConnectivityState#2",
+   "name": "addrConn.updateConnectivityState",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:connectivityStateManager.updateState#1",
+   "name": "connectivityStateManager.updateState",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:clientconn.go:retryThrottler.throttle#0",
+   "name": "retryThrottler.throttle",
+   "label": "Method",
+   "file": "clientconn.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:codec.go:baseCodec.Unmarshal#2",
+   "name": "baseCodec.Unmarshal",
+   "label": "Method",
+   "file": "codec.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:codec.go:codecV0Bridge.Unmarshal#2",
+   "name": "codecV0Bridge.Unmarshal",
+   "label": "Method",
+   "file": "codec.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:codec.go:codecV1Bridge.Name#0",
+   "name": "codecV1Bridge.Name",
+   "label": "Method",
+   "file": "codec.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:credentials/alts/utils_test.go:s.TestAuthInfoFromContext#1",
+   "name": "s.TestAuthInfoFromContext",
+   "label": "Method",
+   "file": "credentials/alts/utils_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:credentials/alts/utils_test.go:s.TestClientAuthorizationCheck#1",
+   "name": "s.TestClientAuthorizationCheck",
+   "label": "Method",
+   "file": "credentials/alts/utils_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:credentials/credentials.go:AuthorityValidator.ValidateAuthority#1",
+   "name": "AuthorityValidator.ValidateAuthority",
+   "label": "Method",
+   "file": "credentials/credentials.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:credentials/credentials_ext_test.go:testAuthInfoWithValidator.ValidateAuthority#1",
+   "name": "testAuthInfoWithValidator.ValidateAuthority",
+   "label": "Method",
+   "file": "credentials/credentials_ext_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:credentials/tls.go:TLSInfo.ValidateAuthority#1",
+   "name": "TLSInfo.ValidateAuthority",
+   "label": "Method",
+   "file": "credentials/tls.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:encoding/encoding_test.go:renameProtoCodec.Name#0",
+   "name": "renameProtoCodec.Name",
+   "label": "Method",
+   "file": "encoding/encoding_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:encoding/encoding_v2.go:CodecV2.Name#0",
+   "name": "CodecV2.Name",
+   "label": "Method",
+   "file": "encoding/encoding_v2.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "name": "wrappedStream.RecvMsg",
+   "label": "Method",
+   "file": "examples/features/interceptor/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "name": "wrappedStream.SendMsg",
+   "label": "Method",
+   "file": "examples/features/interceptor/client/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.RecvMsg#1",
+   "name": "wrappedStream.RecvMsg",
+   "label": "Method",
+   "file": "examples/features/interceptor/server/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.SendMsg#1",
+   "name": "wrappedStream.SendMsg",
+   "label": "Method",
+   "file": "examples/features/interceptor/server/main.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/binarylog/binarylog.go:Logger.GetMethodLogger#1",
+   "name": "Logger.GetMethodLogger",
+   "label": "Method",
+   "file": "internal/binarylog/binarylog.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "name": "ChannelTrace.append",
+   "label": "Method",
+   "file": "internal/channelz/trace.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.copy#0",
+   "name": "ChannelTrace.copy",
+   "label": "Method",
+   "file": "internal/channelz/trace.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/idle/idle.go:Manager.OnCallBegin#0",
+   "name": "Manager.OnCallBegin",
+   "label": "Method",
+   "file": "internal/idle/idle.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/idle/idle.go:Manager.OnCallEnd#0",
+   "name": "Manager.OnCallEnd",
+   "label": "Method",
+   "file": "internal/idle/idle.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/resolver/config_selector.go:SafeConfigSelector.SelectConfig#1",
+   "name": "SafeConfigSelector.SelectConfig",
+   "label": "Method",
+   "file": "internal/resolver/config_selector.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/status/status.go:Status.Code#0",
+   "name": "Status.Code",
+   "label": "Method",
+   "file": "internal/status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/status/status.go:Status.Err#0",
+   "name": "Status.Err",
+   "label": "Method",
+   "file": "internal/status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/status/status.go:Status.Proto#0",
+   "name": "Status.Proto",
+   "label": "Method",
+   "file": "internal/status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GetGoAwayReason#0",
+   "name": "http2Client.GetGoAwayReason",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GoAway#0",
+   "name": "http2Client.GoAway",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GracefulClose#0",
+   "name": "http2Client.GracefulClose",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "name": "NewStream",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "755",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.Peer#0",
+   "name": "http2Client.Peer",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.createHeaderFields#2",
+   "name": "http2Client.createHeaderFields",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.incrMsgSent#0",
+   "name": "http2Client.incrMsgSent",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.newStream#3",
+   "name": "http2Client.newStream",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_client.go:http2Client.write#4",
+   "name": "write",
+   "label": "Method",
+   "file": "internal/transport/http2_client.go",
+   "line": "1105",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/http2_server.go:http2Server.checkForHeaderListSize#1",
+   "name": "http2Server.checkForHeaderListSize",
+   "label": "Method",
+   "file": "internal/transport/http2_server.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/transport/transport.go:ConnectionError.Error#0",
+   "name": "ConnectionError.Error",
+   "label": "Method",
+   "file": "internal/transport/transport.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "name": "testLDSWatcher.cancel",
+   "label": "Method",
+   "file": "internal/xds/clients/xdsclient/test/misc_watchers_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "name": "pick",
+   "label": "Method",
+   "file": "picker_wrapper.go",
+   "line": "104",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:rpc_util.go:Compressor.Type#0",
+   "name": "Compressor.Type",
+   "label": "Method",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:rpc_util.go:payloadInfo.free#0",
+   "name": "payloadInfo.free",
+   "label": "Method",
+   "file": "rpc_util.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:server.go:Server.getCodec#1",
+   "name": "Server.getCodec",
+   "label": "Method",
+   "file": "server.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stats/opentelemetry/server_metrics.go:attachLabelsStream.SendMsg#1",
+   "name": "attachLabelsStream.SendMsg",
+   "label": "Method",
+   "file": "stats/opentelemetry/server_metrics.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:status/status.go:grpcstatus.GRPCStatus#0",
+   "name": "grpcstatus.GRPCStatus",
+   "label": "Method",
+   "file": "status/status.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:status/status_test.go:customError.GRPCStatus#0",
+   "name": "customError.GRPCStatus",
+   "label": "Method",
+   "file": "status/status_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:status/status_test.go:customErrorNilStatus.GRPCStatus#0",
+   "name": "customErrorNilStatus.GRPCStatus",
+   "label": "Method",
+   "file": "status/status_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientConn.NewStream",
+   "name": "ClientConn.NewStream",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.CloseSend#0",
+   "name": "ClientStream.CloseSend",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.Context#0",
+   "name": "ClientStream.Context",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.Header#0",
+   "name": "ClientStream.Header",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "147",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "138",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ClientStream.Trailer#0",
+   "name": "ClientStream.Trailer",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ServerStream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1642",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ServerStream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1633",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:ServerStream.SetHeader#1",
+   "name": "ServerStream.SetHeader",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:Stream.Context#0",
+   "name": "Stream.Context",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:Stream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "89",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:Stream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "87",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "name": "addrConnStream.Context",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "name": "addrConnStream.Header",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1511",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:addrConnStream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1460",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:addrConnStream.Trailer#0",
+   "name": "addrConnStream.Trailer",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientInterceptor.NewStream",
+   "name": "clientInterceptor.NewStream",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.CloseSend#0",
+   "name": "clientStream.CloseSend",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "name": "clientStream.Header",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1024",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "953",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.bufferForRetryLocked#3",
+   "name": "clientStream.bufferForRetryLocked",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "name": "clientStream.finish",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.retryLocked#2",
+   "name": "clientStream.retryLocked",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "name": "withRetry",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "830",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:csAttempt.getTransport#0",
+   "name": "getTransport",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "514",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "name": "csAttempt.newStream",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "name": "csAttempt.recvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:csAttempt.sendMsg#5",
+   "name": "csAttempt.sendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "name": "shouldRetry",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "700",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "name": "RecvMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1808",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "name": "SendMsg",
+   "label": "Method",
+   "file": "stream.go",
+   "line": "1725",
+   "repo": "grpc-go",
+   "verified": true
+  },
+  {
+   "id": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "name": "s.TestServerStreaming_ClientCallSendMsgTwice",
+   "label": "Method",
+   "file": "test/end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "name": "s.TestServerStreaming_ClientSendsMultipleMessages",
+   "label": "Method",
+   "file": "test/end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "name": "s.TestServerStreaming_ServerRecvZeroRequests",
+   "label": "Method",
+   "file": "test/end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "name": "s.TestUnaryRPC_ClientCallRecvMsgTwice",
+   "label": "Method",
+   "file": "test/end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "name": "s.TestUnaryRPC_ClientCallSendMsgTwice",
+   "label": "Method",
+   "file": "test/end2end_test.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  },
+  {
+   "id": "grpc-go::Method:trace.go:firstLine.SetRemoteAddr#1",
+   "name": "firstLine.SetRemoteAddr",
+   "label": "Method",
+   "file": "trace.go",
+   "line": "",
+   "repo": "grpc-go",
+   "verified": false
+  }
+ ],
+ "edges": [
+  {
+   "source": "grpc-go::Function:balancer/grpclb/grpclb_test.go:startBackends",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:balancer/grpclb/grpclb_test.go:startBackends",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:balancer/grpclb/grpclb_test.go:startBackends",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:balancer/grpclb/grpclb_test.go:startBackends",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:balancer/rls/internal/keys/builder_test.go:TestRLSKey",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:benchmark/benchmain/main.go:setupStream",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:call.go:Invoke",
+   "target": "grpc-go::Method:call.go:ClientConn.Invoke",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Function:call.go:combine",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.copy#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:call.go:invoke",
+   "target": "grpc-go::Function:stream.go:newClientStream",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Function:clientconn.go:NewClient",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:encoding/compressor_test.go:setupGzipWrapCompressor",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:encoding/gzip/gzip.go:SetLevel",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata/client/main.go:bidirectionalWithMetadata",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata/client/main.go:clientStreamWithMetadata",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata/client/main.go:serverStreamingWithMetadata",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata/client/main.go:unaryCallWithMetadata",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata_interceptor/server/main.go:streamInterceptor",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:examples/features/metadata_interceptor/server/main.go:unaryInterceptor",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/binarylog/binarylog.go:GetMethodLogger",
+   "target": "grpc-go::Method:internal/binarylog/binarylog.go:Logger.GetMethodLogger#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/funcs.go:RegisterChannel",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/funcs.go:RegisterServer",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/funcs.go:RegisterSocket",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/funcs.go:RegisterSubChannel",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/funcs.go:RemoveEntry",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "target": "grpc-go::Function:internal/channelz/trace.go:AddTraceEvent",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/logging.go:Warningf",
+   "target": "grpc-go::Function:internal/channelz/trace.go:AddTraceEvent",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/channelz/trace.go:AddTraceEvent",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata.go:Validate",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:ValidatePair",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata.go:ValidatePair",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:ValidateKey",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata.go:ValidatePair",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:hasNotPrintable",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata_test.go:TestGet",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata_test.go:TestSet",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/metadata/metadata_test.go:TestValidate",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:Validate",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/status/status.go:IsRestrictedControlPlaneCode",
+   "target": "grpc-go::Method:internal/status/status.go:Status.Code#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/handler_server.go:NewServerHandlerTransport",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/handler_server.go:NewServerHandlerTransport",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/http2_client.go:NewHTTP2Client",
+   "target": "grpc-go::Function:peer/peer.go:NewContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:checkForHealthyStream",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:checkForHealthyStream",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:pollForStreamCreationError",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:pollForStreamCreationError",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:waitForGoAwayTooManyPings",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GetGoAwayReason#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:waitForGoAwayTooManyPings",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GoAway#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:waitForGoAwayTooManyPings",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/keepalive_test.go:waitForGoAwayTooManyPings",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/transport.go:ContextErr",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/transport.go:ContextErr",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/transport/transport.go:ContextErr",
+   "target": "grpc-go::Method:internal/transport/transport.go:ConnectionError.Error#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/httpfilter/fault/fault.go:injectAbort",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/httpfilter/fault/fault.go:injectAbort",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/httpfilter/fault/fault.go:injectDelay",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderExactMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderPrefixMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderPresentMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderRangeMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderRegexMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderStringMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:internal/xds/matcher/matcher_header_test.go:TestHeaderSuffixMatcherMatch",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:interop/xds/client/client.go:parseRPCMetadata",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "target": "grpc-go::Function:metadata/metadata.go:copyOf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata_test.go:BenchmarkFromIncomingContext",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata_test.go:BenchmarkFromOutgoingContext",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata_test.go:BenchmarkValueFromIncomingContext",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata_test.go:Benchmark_AddingMetadata_ContextManipulationApproach",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:metadata/metadata_test.go:Benchmark_AddingMetadata_ContextManipulationApproach",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:peer/peer_test.go:TestPeerStringer",
+   "target": "grpc-go::Function:peer/peer.go:NewContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:recv",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:recv",
+   "target": "grpc-go::Method:codec.go:baseCodec.Unmarshal#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:recv",
+   "target": "grpc-go::Method:codec.go:codecV0Bridge.Unmarshal#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "target": "grpc-go::Method:codec.go:codecV1Bridge.Name#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "target": "grpc-go::Method:encoding/encoding_test.go:renameProtoCodec.Name#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "target": "grpc-go::Method:encoding/encoding_v2.go:CodecV2.Name#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "target": "grpc-go::Method:server.go:Server.getCodec#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "target": "grpc-go::Function:status/status.go:FromError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stats/stats_test.go:getOutgoingStats",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:Code",
+   "target": "grpc-go::Method:internal/status/status.go:Status.Code#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:Error",
+   "target": "grpc-go::Method:internal/status/status.go:Status.Err#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:Errorf",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:FromError",
+   "target": "grpc-go::Method:internal/status/status.go:Status.Proto#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:FromError",
+   "target": "grpc-go::Method:status/status.go:grpcstatus.GRPCStatus#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:FromError",
+   "target": "grpc-go::Method:status/status_test.go:customError.GRPCStatus#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:status/status.go:FromError",
+   "target": "grpc-go::Method:status/status_test.go:customErrorNilStatus.GRPCStatus#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:endOfClientStream",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:endOfClientStream",
+   "target": "grpc-go::Method:clientconn.go:ClientConn.incrCallsFailed#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:endOfClientStream",
+   "target": "grpc-go::Method:clientconn.go:ClientConn.incrCallsSucceeded#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:call.go:combine",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:Validate",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:internal/metadata/metadata.go:ValidatePair",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:internal/status/status.go:IsRestrictedControlPlaneCode",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:rpc_util.go:OnFinish",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:status/status.go:FromError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:stream.go:endOfClientStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:clientconn.go:ClientConn.incrCallsStarted#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:clientconn.go:ClientConn.waitForResolvedAddrs#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:internal/idle/idle.go:Manager.OnCallBegin#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:internal/idle/idle.go:Manager.OnCallEnd#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:internal/resolver/config_selector.go:SafeConfigSelector.SelectConfig#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:stream.go:clientInterceptor.NewStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStream",
+   "target": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:internal/binarylog/binarylog.go:GetMethodLogger",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:rpc_util.go:defaultCallInfo",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:rpc_util.go:setCallInfoCodec",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:service_config.go:getMaxSize",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:rpc_util.go:Compressor.Type#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:stream.go:clientStream.bufferForRetryLocked#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:stream.go:csAttempt.getTransport#0",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Function:stream.go:newClientStreamWithParams",
+   "target": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.CloseSend#0",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.Context#0",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.Header#0",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ClientStream",
+   "target": "grpc-go::Method:stream.go:ClientStream.Trailer#0",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ServerStream",
+   "target": "grpc-go::Method:stream.go:ServerStream.RecvMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ServerStream",
+   "target": "grpc-go::Method:stream.go:ServerStream.SendMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:ServerStream",
+   "target": "grpc-go::Method:stream.go:ServerStream.SetHeader#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:Stream",
+   "target": "grpc-go::Method:stream.go:Stream.Context#0",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:Stream",
+   "target": "grpc-go::Method:stream.go:Stream.RecvMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Interface:stream.go:Stream",
+   "target": "grpc-go::Method:stream.go:Stream.SendMsg#1",
+   "type": "HAS_METHOD",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/grpclb/grpclb_remote_balancer.go:lbBalancer.processServerList#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/grpclb/grpclb_remote_balancer.go:lbBalancer.processServerList#1",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/picker.go:picker.Pick#1",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicks#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicks#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicksToMultipleSubConnsConcurrently#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesConnectingWithoutPicksToMultipleSubConnsConcurrently#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ContinuesPastTerminalPolicyThatDoesNotProduceResult#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_EndpointHashKey#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_FixedHashingTerminalPolicy#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_HeaderHashing#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_HeaderHashingWithRegexRewrite#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenEndpointEntersIdle#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenEndpointEntersIdle#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenResolverRemovesEndpoint#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RecoverWhenResolverRemovesEndpoint#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_ReorderAddressessWithinEndpoint#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_RequestHashKey#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_SwitchToLowerPriorityAndThenBack#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_TransientFailureCheckNextOne#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/ringhash/ringhash_e2e_test.go:s.TestRingHash_TransientFailureSkipToAvailableReady#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/rls/picker.go:rlsPicker.Pick#1",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/rls/picker.go:rlsPicker.Pick#1",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer/rls/picker.go:rlsPicker.delegateToChildPoliciesLocked#2",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "target": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.NewStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.Invoke",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:acBalancerWrapper.NewStream",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:ccBalancerWrapper.NewSubConn#2",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Warningf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:balancer_wrapper.go:ccBalancerWrapper.updateClientConnState#1",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:binarylog/binarylog_end2end_test.go:s.TestCanceledStatus#1",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:binarylog/binarylog_end2end_test.go:s.TestCanceledStatus#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:binarylog/binarylog_end2end_test.go:s.TestCanceledStatus#1",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:call.go:ClientConn.Invoke",
+   "target": "grpc-go::Function:call.go:combine",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:call.go:ClientConn.Invoke",
+   "target": "grpc-go::Function:call.go:invoke",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:ClientConn.updateResolverStateAndUnlock#2",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:ClientConn.waitForResolvedAddrs#1",
+   "target": "grpc-go::Function:status/status.go:FromContextError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:addrConn.createTransport#4",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Warningf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:addrConn.tryAllAddrs#3",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:addrConn.updateAddrs#1",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:addrConn.updateConnectivityState#2",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:clientconn.go:connectivityStateManager.updateState#1",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:credentials/alts/utils_test.go:s.TestAuthInfoFromContext#1",
+   "target": "grpc-go::Function:peer/peer.go:NewContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:credentials/alts/utils_test.go:s.TestClientAuthorizationCheck#1",
+   "target": "grpc-go::Function:peer/peer.go:NewContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:credentials/credentials_ext_test.go:testAuthInfoWithValidator.ValidateAuthority#1",
+   "target": "grpc-go::Method:credentials/credentials.go:AuthorityValidator.ValidateAuthority#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:credentials/tls.go:TLSInfo.ValidateAuthority#1",
+   "target": "grpc-go::Method:credentials/credentials.go:AuthorityValidator.ValidateAuthority#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.RecvMsg#1",
+   "target": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:ServerStream.RecvMsg#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.SendMsg#1",
+   "target": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:examples/features/interceptor/server/main.go:wrappedStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:ServerStream.SendMsg#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/resolver/config_selector.go:SafeConfigSelector.SelectConfig#1",
+   "target": "grpc-go::Method:internal/resolver/config_selector.go:SafeConfigSelector.SelectConfig#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:internal/transport/transport.go:ContextErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:metadata/metadata.go:Pairs",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:peer/peer.go:NewContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:credentials/credentials.go:AuthorityValidator.ValidateAuthority#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:credentials/credentials_ext_test.go:testAuthInfoWithValidator.ValidateAuthority#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:credentials/tls.go:TLSInfo.ValidateAuthority#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.GracefulClose#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.Peer#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.createHeaderFields#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.newStream#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.NewStream#3",
+   "target": "grpc-go::Method:internal/transport/http2_server.go:http2Server.checkForHeaderListSize#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.createHeaderFields#2",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.createHeaderFields#2",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.incrMsgSent#0",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:internal/transport/http2_client.go:http2Client.write#4",
+   "target": "grpc-go::Method:internal/transport/http2_client.go:http2Client.incrMsgSent#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:internal/channelz/funcs.go:IsOn",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:internal/status/status.go:IsRestrictedControlPlaneCode",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:picker_wrapper.go:doneChannelzWrapper",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Function:status/status.go:FromError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "target": "grpc-go::Method:clientconn.go:addrConn.getReadyTransport#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stats/opentelemetry/server_metrics.go:attachLabelsStream.SendMsg#1",
+   "target": "grpc-go::Method:stats/opentelemetry/server_metrics.go:attachLabelsStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stats/opentelemetry/server_metrics.go:attachLabelsStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:ServerStream.SendMsg#1",
+   "type": "METHOD_IMPLEMENTS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:ClientConn.NewStream",
+   "target": "grpc-go::Function:call.go:combine",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:ClientConn.NewStream",
+   "target": "grpc-go::Function:stream.go:newClientStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:acceptedCompressorAllows",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:recv",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.SendMsg#1",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.SendMsg#1",
+   "target": "grpc-go::Function:stream.go:prepareMsg",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:addrConnStream.Trailer#0",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Trailer#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.CloseSend#0",
+   "target": "grpc-go::Method:stream.go:clientStream.bufferForRetryLocked#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.CloseSend#0",
+   "target": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.Header#0",
+   "target": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "target": "grpc-go::Method:rpc_util.go:payloadInfo.free#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Function:stream.go:prepareMsg",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.bufferForRetryLocked#3",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:csAttempt.sendMsg#5",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.bufferForRetryLocked#3",
+   "target": "grpc-go::Method:internal/channelz/trace.go:ChannelTrace.append#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "target": "grpc-go::Function:stream.go:endOfClientStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Trailer#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.retryLocked#2",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.retryLocked#2",
+   "target": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "target": "grpc-go::Method:stream.go:clientStream.finish#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:clientStream.withRetry#2",
+   "target": "grpc-go::Method:stream.go:clientStream.retryLocked#2",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.getTransport#0",
+   "target": "grpc-go::Method:picker_wrapper.go:pickerWrapper.pick#3",
+   "type": "CALLS",
+   "verified": true
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.getTransport#0",
+   "target": "grpc-go::Method:trace.go:firstLine.SetRemoteAddr#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "target": "grpc-go::Function:metadata/metadata.go:FromOutgoingContext",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "target": "grpc-go::Method:stream.go:ClientConn.NewStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.newStream#0",
+   "target": "grpc-go::Method:stream.go:ClientStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:rpc_util.go:acceptedCompressorAllows",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:rpc_util.go:recv",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.recvMsg#2",
+   "target": "grpc-go::Method:rpc_util.go:payloadInfo.free#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.sendMsg#5",
+   "target": "grpc-go::Function:rpc_util.go:outPayload",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Infof",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Function:internal/channelz/logging.go:Warningf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Function:status/status.go:FromContextError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Method:clientconn.go:retryThrottler.throttle#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:csAttempt.shouldRetry#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Trailer#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:recv",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Function:status/status.go:Error",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Function:status/status.go:FromError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Method:rpc_util.go:payloadInfo.free#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.RecvMsg#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:encoding/encoding.go:GetCompressor",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:outPayload",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:rpc_util.go:toRPCErr",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:status/status.go:Errorf",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:status/status.go:FromError",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Function:stream.go:prepareMsg",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:stream.go:serverStream.SendMsg#1",
+   "target": "grpc-go::Method:stream.go:addrConnStream.Header#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Function:clientconn.go:NewClient",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.Context#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Function:clientconn.go:NewClient",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ClientSendsMultipleMessages#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Function:clientconn.go:NewClient",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.CloseSend#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestServerStreaming_ServerRecvZeroRequests#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientConn.NewStream",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.RecvMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallRecvMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Function:clientconn.go:NewClient",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Function:status/status.go:Code",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:examples/features/interceptor/client/main.go:wrappedStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:internal/xds/clients/xdsclient/test/misc_watchers_test.go:testLDSWatcher.cancel#0",
+   "type": "CALLS",
+   "verified": false
+  },
+  {
+   "source": "grpc-go::Method:test/end2end_test.go:s.TestUnaryRPC_ClientCallSendMsgTwice#1",
+   "target": "grpc-go::Method:stream.go:ClientStream.SendMsg#1",
+   "type": "CALLS",
+   "verified": false
+  }
+ ],
+ "meta": {
+  "generated": "2026-07-18",
+  "gitnexus_version": "1.6.6",
+  "repos": [
+   "grpc-go"
+  ],
+  "hops": 2,
+  "cap": 200,
+  "truncated": true,
+  "seeds_missing": []
+ }
+}

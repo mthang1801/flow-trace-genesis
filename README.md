@@ -13,7 +13,7 @@
 
 Your codebase already contains the truest description of how your business runs — every rule, every approval step, every edge case. **flow-trace-genesis** turns that hidden knowledge into **flow handbooks anyone can read**: what really happens when a customer submits an application, which rules the system enforces, what can go wrong and what it costs — every claim backed by evidence from the code itself, so the handbook never drifts from reality the way hand-written docs do.
 
-One handbook serves the whole team: a plain-language process summary and reverse-engineered business spec for BA/PO/PM, validation rules and failure checklists for QA, and the `file:line` step table with interactive diagrams for engineers. Under the hood it's a plugin for AI coding agents (Claude Code is the primary path; installers included for Codex, OpenCode, Cursor, Antigravity): on first contact with a project it **surveys** the codebase, **interviews it with `file:line` evidence**, then **generates a local `flow-trace` skill** — a dedicated analyst for that project, fluent in its conventions, that cooks technical flows into end-to-end process analysis from tech to business.
+One handbook serves the whole team: a plain-language process summary and reverse-engineered business spec for BA/PO/PM, validation rules and failure checklists for QA, and the `file:line` step table with interactive diagrams for engineers. Under the hood it's a plugin for AI coding agents (Claude Code is the primary path; installers included for Codex, OpenCode, Cursor, Antigravity): on first contact with a project it **surveys** the codebase, **interviews it with `file:line` evidence**, then **generates a local `flow-trace` skill** — a dedicated analyst for that project, fluent in its conventions, that cooks technical flows into end-to-end process analysis from tech to business. Skeptical? Jump to [real output from grpc-go](#see-it-in-action).
 
 ## Why does this exist?
 
@@ -33,6 +33,24 @@ Genesis automates both: it learns the conventions once per project, then turns t
 | **Ops / Security** | Security & ops notes per flow: external touchpoints, queues, retries, failure behavior. |
 
 Inference is always labeled: anything the AI *derived* rather than *read* is explicitly marked, so non-technical readers know which statements are evidence and which are interpretation.
+
+## See it in action
+
+Real, unedited output from running the plugin on [grpc/grpc-go](https://github.com/grpc/grpc-go) — full sample (generated skill + md-source + interactive HTML) in [`examples/grpc-go/`](examples/grpc-go/):
+
+**Interactive knowledge graph** — 200 symbols around the flow, extracted from the code index by script (near-zero token cost). The bright solid path is the *verified* trace (every hop read, with `file:line`); the dim dashed rest are machine-suggested candidates. Filter by kind, fuzzy-search, verified-only toggle:
+
+![Knowledge graph section](docs/images/sample-kg.png)
+
+**Sequence diagram** — rendered natively from Mermaid, every message annotated with the exact `file:line`, including the failure branches (note the `alt` block where a unary write error returns `nil` and defers to `RecvMsg`):
+
+![Sequence diagram section](docs/images/sample-sequence.png)
+
+**Step table** — the evidence backbone: 24 hops, each one a file actually read:
+
+![Step table section](docs/images/sample-steps.png)
+
+The HTML is fully self-contained — download [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) and open it offline in any browser.
 
 ## Installation
 
@@ -101,7 +119,9 @@ plugins/flow-trace-genesis/
 ├── .claude-plugin/plugin.json
 ├── skills/flow-trace-genesis/       # SKILL.md + references/ (templates, questionnaire) + render/
 └── .mcp.json                        # serena + markitdown + docling (optional, degradable)
-installers/                          # multi-harness install.sh + prompts/
+installers/                          # multi-harness install.sh + doctor.sh + prompts/
+examples/grpc-go/                    # real output: generated skill + handbook + interactive HTML
+docs/images/                         # README screenshots
 ```
 
 ## Requirements

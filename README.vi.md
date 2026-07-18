@@ -13,7 +13,7 @@
 
 Codebase của bạn vốn đã chứa bản mô tả đúng nhất về cách business vận hành — từng rule, từng bước duyệt, từng edge case. **flow-trace-genesis** biến tri thức ẩn đó thành **cẩm nang flow ai cũng đọc được**: điều gì thực sự xảy ra khi khách hàng nộp hồ sơ, hệ thống đang ép những rule nào, cái gì có thể hỏng và hỏng thì mất gì — mọi khẳng định đều có bằng chứng từ chính code, nên cẩm nang không bao giờ trôi khỏi thực tế như tài liệu viết tay.
 
-Một cẩm nang phục vụ cả team: tóm tắt quy trình bằng ngôn ngữ thường + business spec dựng ngược từ code cho BA/PO/PM, validation rules và checklist lỗi cho QA, bảng bước `file:line` cùng diagram tương tác cho kỹ sư. Bên dưới, nó là plugin cho AI coding agent (Claude Code là đường chính; kèm installer cho Codex, OpenCode, Cursor, Antigravity): lần đầu tiếp cận một project, nó **khảo sát** codebase, **phỏng vấn codebase bằng bằng chứng `file:line`**, rồi **sinh ra skill `flow-trace` local** — một "chuyên viên phân tích" riêng cho project đó, thuộc convention của project, chuyên "cook" flow kỹ thuật thành bản phân tích quy trình tổng thể từ tech đến business.
+Một cẩm nang phục vụ cả team: tóm tắt quy trình bằng ngôn ngữ thường + business spec dựng ngược từ code cho BA/PO/PM, validation rules và checklist lỗi cho QA, bảng bước `file:line` cùng diagram tương tác cho kỹ sư. Bên dưới, nó là plugin cho AI coding agent (Claude Code là đường chính; kèm installer cho Codex, OpenCode, Cursor, Antigravity): lần đầu tiếp cận một project, nó **khảo sát** codebase, **phỏng vấn codebase bằng bằng chứng `file:line`**, rồi **sinh ra skill `flow-trace` local** — một "chuyên viên phân tích" riêng cho project đó, thuộc convention của project, chuyên "cook" flow kỹ thuật thành bản phân tích quy trình tổng thể từ tech đến business. Muốn thấy tận mắt? Nhảy tới [kết quả thật từ grpc-go](#xem-kết-quả-thật).
 
 ## Vì sao cần nó?
 
@@ -33,6 +33,24 @@ Genesis tự động hoá cả hai: học convention một lần cho mỗi proje
 | **Ops / Security** | Ghi chú security & ops theo từng flow: điểm chạm bên ngoài, queue, retry, hành vi khi lỗi. |
 
 Suy luận luôn được gắn nhãn: nội dung AI *suy ra* (thay vì *đọc thấy*) đều được đánh dấu rõ, để người không đọc code biết câu nào là bằng chứng, câu nào là diễn giải.
+
+## Xem kết quả thật
+
+Output thật, không chỉnh tay, từ lần chạy plugin trên [grpc/grpc-go](https://github.com/grpc/grpc-go) — sample đầy đủ (skill sinh ra + md-source + HTML tương tác) tại [`examples/grpc-go/`](examples/grpc-go/):
+
+**Knowledge graph tương tác** — 200 symbol quanh flow, trích từ code index bằng script (gần như không tốn token). Đường sáng nét liền là trace *đã verify* (từng hop đều đọc thật, có `file:line`); phần mờ nét đứt là ứng viên máy gợi ý. Filter theo loại, fuzzy search, toggle chỉ-verified:
+
+![Section knowledge graph](docs/images/sample-kg.png)
+
+**Sequence diagram** — render native từ Mermaid, từng message chú thích đúng `file:line`, gồm cả nhánh lỗi (chú ý block `alt`: write lỗi ở unary trả `nil`, hoãn lỗi sang `RecvMsg`):
+
+![Section sequence diagram](docs/images/sample-sequence.png)
+
+**Bảng bước** — xương sống bằng chứng: 24 hop, mỗi hop là một file đã đọc thật:
+
+![Section bảng bước](docs/images/sample-steps.png)
+
+HTML hoàn toàn self-contained — tải [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) về mở offline bằng browser bất kỳ.
 
 ## Cài đặt
 
@@ -101,7 +119,9 @@ plugins/flow-trace-genesis/
 ├── .claude-plugin/plugin.json
 ├── skills/flow-trace-genesis/       # SKILL.md + references/ (template, questionnaire) + render/
 └── .mcp.json                        # serena + markitdown + docling (optional, degrade được)
-installers/                          # install.sh đa harness + prompts/
+installers/                          # install.sh đa harness + doctor.sh + prompts/
+examples/grpc-go/                    # output thật: skill sinh ra + cẩm nang + HTML tương tác
+docs/images/                         # screenshot cho README
 ```
 
 ## Yêu cầu
