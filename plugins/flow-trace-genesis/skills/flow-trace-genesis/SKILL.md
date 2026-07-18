@@ -1,6 +1,6 @@
 ---
 name: flow-trace-genesis
-description: Lần đầu tiếp cận một project CHƯA có skill flow-trace local — khảo sát codebase (Evidence/Candidate/Ingest tier) rồi SINH skill flow-trace local self-contained cho project đó (CORE + PROFILE, version stamp, golden-flow gate Draft→Verified). Dùng khi user gọi /flow-trace-genesis, muốn "dạy AI trace flow project này", hoặc muốn regenerate CORE của flow-trace đã sinh. KHÔNG dùng khi project đã có flow-trace local và user chỉ muốn trace — khi đó dùng chính skill local.
+description: Lần đầu tiếp cận một project CHƯA có skill flow-trace local — khảo sát codebase (Evidence/Candidate/Ingest tier) rồi SINH skill flow-trace local self-contained cho project đó (CORE + PROFILE, version stamp, golden-flow gate Draft→Verified). Skill sinh ra biến flow trong code thành cẩm nang từ tech đến business — tóm tắt nghiệp vụ, validation rules, business spec ngược, failure modes — cho cả dev lẫn BA/PO/PM/QA. Dùng khi user gọi /flow-trace-genesis, muốn "dạy AI trace flow project này", muốn "tài liệu hoá quy trình từ code cho cả team", hoặc muốn regenerate CORE của flow-trace đã sinh. KHÔNG dùng khi project đã có flow-trace local và user chỉ muốn trace — khi đó dùng chính skill local.
 argument-hint: TARGET_DIR=<path> [PRD=<file>] [ADVISOR=gitnexus|deepwiki|none]
 ---
 
@@ -8,7 +8,10 @@ argument-hint: TARGET_DIR=<path> [PRD=<file>] [ADVISOR=gitnexus|deepwiki|none]
 
 Sản phẩm cuối **không phải bản trace**, mà là **một skill `flow-trace` local** nằm trong
 project đích: tự đứng được (self-contained), đúng convention project, kèm bộ render
-md-source → HTML, và chỉ được coi là xong khi qua golden-flow gate.
+md-source → HTML, và chỉ được coi là xong khi qua golden-flow gate. Cẩm nang skill đó
+sinh ra phục vụ **cả team, không riêng dev**: tóm tắt nghiệp vụ ngôn ngữ thường +
+business spec ngược cho BA/PO/PM, validation rules + failure modes cho QA, bảng bước
+`file:line` + diagram cho kỹ sư.
 
 ## Nguyên tắc sản phẩm (bất biến — trùng `.agents/AGENTS.md` repo này)
 

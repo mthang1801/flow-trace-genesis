@@ -20,7 +20,7 @@ Placeholder genesis phải điền:
 ```markdown
 ---
 name: flow-trace
-description: Trace end-to-end business flow trong {{PROJECT_NAME}} từ 1 file/hàm/tên flow được chỉ định. Dùng khi user gọi /flow-trace, hỏi "flow này đi qua đâu", "ai gọi hàm này", "vẽ diagram flow X", hoặc cần cẩm nang business/validation/failure-mode cho một luồng nghiệp vụ. Output persist tại {{OUTPUT_DIR}}<slug>/ (md-source đa section + _doc.yml), render HTML bằng render/build.py.
+description: Trace end-to-end business flow trong {{PROJECT_NAME}} từ 1 file/hàm/tên flow được chỉ định. Dùng khi user gọi /flow-trace, hỏi "flow này đi qua đâu", "ai gọi hàm này", "vẽ diagram flow X", "quy trình này thực sự chạy thế nào", hoặc cần cẩm nang business/validation/failure-mode cho một luồng nghiệp vụ — cẩm nang viết cho cả dev lẫn BA/PO/PM/QA (tóm tắt nghiệp vụ ngôn ngữ thường + bằng chứng file:line). Output persist tại {{OUTPUT_DIR}}<slug>/ (md-source đa section + _doc.yml), render HTML bằng render/build.py.
 ---
 
 <!-- generated-by: flow-trace-genesis v{{GENESIS_VERSION}} · {{DATE}} · status: Draft -->

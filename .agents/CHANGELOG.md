@@ -18,6 +18,26 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — Đồng bộ định vị mọi-domain vào description/manifest
+
+**Loại**: Docs / Positioning
+
+**Thay đổi**:
+- README đã đổi hướng "từ tech đến business" nhưng manifest/description còn thuần dev →
+  dò và sửa: marketplace.json (2 description + keywords thêm business-analysis/
+  process-documentation/knowledge-graph), plugin.json (description + keywords),
+  SKILL.md genesis (frontmatter description thêm audience + trigger "tài liệu hoá quy
+  trình từ code cho cả team"; intro thêm đoạn cẩm nang phục vụ cả team),
+  installers/prompts (description), core-template.md (description của skill SINH RA —
+  mọi project sau này kế thừa: thêm trigger "quy trình này thực sự chạy thế nào" +
+  audience BA/PO/PM/QA).
+- Nguyên tắc: GIỮ nguyên từ khóa trigger cũ (description điều khiển auto-trigger),
+  chỉ bổ sung — không thay thế.
+- Verify: JSON parse OK; `claude --plugin-dir ... plugin details` load OK, Skills (1),
+  ~353 tok always-on (tăng từ ~243 do description dài hơn).
+
+**Trạng thái**: `Done`.
+
 ### 2026-07-18 — examples/grpc-go + README "See it in action"
 
 **Loại**: Docs / Distribution

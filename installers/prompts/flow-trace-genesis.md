@@ -1,5 +1,5 @@
 ---
-description: Khảo sát project đích rồi sinh skill flow-trace local (CORE+PROFILE, golden-flow gate)
+description: Khảo sát project đích rồi sinh skill flow-trace local — biến flow trong code thành cẩm nang từ tech đến business cho cả dev lẫn BA/PO/PM/QA (CORE+PROFILE, golden-flow gate)
 argument-hint: TARGET_DIR=<path> [PRD=<file>] [ADVISOR=gitnexus|deepwiki|none]
 ---
 

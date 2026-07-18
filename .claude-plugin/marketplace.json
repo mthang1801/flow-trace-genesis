@@ -1,6 +1,6 @@
 {
   "name": "flow-trace-genesis-marketplace",
-  "description": "Marketplace cho plugin flow-trace-genesis — sinh skill flow-trace local cho project bất kỳ.",
+  "description": "Marketplace cho plugin flow-trace-genesis — biến codebase bất kỳ thành cẩm nang flow cả team đọc được, từ dev đến BA/PO/PM/QA.",
   "owner": {
     "name": "mthang1801",
     "url": "https://github.com/mthang1801"
@@ -9,13 +9,13 @@
     {
       "name": "flow-trace-genesis",
       "source": "./plugins/flow-trace-genesis",
-      "description": "Khảo sát project lạ rồi SINH skill flow-trace local self-contained (CORE + PROFILE, golden-flow gate). Kèm base render md-source → HTML.",
+      "description": "Khảo sát project lạ rồi SINH skill flow-trace local self-contained — trace flow từ code thành cẩm nang từ tech đến business (tóm tắt nghiệp vụ, validation rules, business spec ngược, failure modes) cho cả dev lẫn BA/PO/PM/QA. CORE + PROFILE, golden-flow gate, render md-source → HTML tương tác.",
       "version": "0.1.0",
       "author": {
         "name": "mthang1801"
       },
       "license": "Apache-2.0",
-      "keywords": ["flow-trace", "code-intelligence", "documentation", "tracing"]
+      "keywords": ["flow-trace", "code-intelligence", "documentation", "tracing", "business-analysis", "process-documentation", "knowledge-graph"]
     }
   ]
 }

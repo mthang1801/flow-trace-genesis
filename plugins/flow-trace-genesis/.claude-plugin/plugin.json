@@ -1,7 +1,7 @@
 {
   "name": "flow-trace-genesis",
   "version": "0.1.0",
-  "description": "Lần đầu gặp project lạ: khảo sát bằng tool tier Evidence/Candidate/Ingest rồi sinh skill flow-trace local self-contained cho project đó (CORE + PROFILE, version stamp, regenerate bảo toàn PROFILE, golden-flow gate Draft→Verified).",
+  "description": "Lần đầu gặp project lạ: khảo sát bằng tool tier Evidence/Candidate/Ingest rồi sinh skill flow-trace local self-contained cho project đó — trace flow từ code thành cẩm nang từ tech đến business (tóm tắt nghiệp vụ, validation rules, business spec ngược, failure modes) mà cả dev lẫn BA/PO/PM/QA đọc được (CORE + PROFILE, version stamp, regenerate bảo toàn PROFILE, golden-flow gate Draft→Verified).",
   "author": {
     "name": "mthang1801",
     "url": "https://github.com/mthang1801"
@@ -9,5 +9,5 @@
   "homepage": "https://github.com/mthang1801/flow-trace-genesis",
   "repository": "https://github.com/mthang1801/flow-trace-genesis",
   "license": "Apache-2.0",
-  "keywords": ["flow-trace", "genesis", "code-intelligence", "cross-service", "documentation"]
+  "keywords": ["flow-trace", "genesis", "code-intelligence", "cross-service", "documentation", "business-analysis", "process-documentation", "knowledge-graph"]
 }
