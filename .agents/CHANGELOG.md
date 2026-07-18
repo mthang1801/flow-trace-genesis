@@ -18,6 +18,25 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — Gỡ profiles/lending.md khỏi repo public (kể cả git history)
+
+**Loại**: Security / Compliance (sanitize-before-public)
+
+**Thay đổi**:
+- Phát hiện: repo đã chuyển Public nhưng `profiles/lending.md` (mẫu vàng viết tay, đánh
+  dấu INTERNAL/sanitize-before-public từ lúc scaffold) chưa được sanitize — chứa tên công
+  ty, layout service nội bộ, tên hệ thống đối tác tích hợp, message constants nội bộ, tên
+  file tài liệu nội bộ.
+- Xử lý: backup nội dung đầy đủ vào Lending repo private (không public), `git rm` khỏi
+  working tree, **`git filter-repo` xoá file khỏi TOÀN BỘ git history** (repo mới 13
+  commit, 0 star/fork lúc xử lý — rewrite an toàn), force-push.
+- SKILL.md bước 4 (mẫu vàng để so chất lượng PROFILE): đổi tham chiếu từ
+  `profiles/lending.md` sang `examples/grpc-go/skill/SKILL.md` (public-safe, đã có sẵn).
+- Record lịch sử (`changes/bootstrap/*.md`, CHANGELOG entry cũ) giữ nguyên — chỉ nhắc tên
+  file, không leak nội dung.
+
+**Trạng thái**: `Done`.
+
 ### 2026-07-18 — Đồng bộ định vị mọi-domain vào description/manifest
 
 **Loại**: Docs / Positioning
