@@ -108,6 +108,16 @@ def check(doc_dir):
     if kg_files and 'kg-canvas' not in html:
         fail("md có fence ```kg nhưng HTML không có #kg-canvas — build lại")
 
+    # 8c. Mermaid: fence ```mermaid phải thành diagram thật (lib nhúng + pre.mermaid),
+    #     không được rớt về code block tĩnh.
+    mmd_files = [f for f in md_files
+                 if re.search(r'^```mermaid\b', open(os.path.join(abs_dir, f), encoding='utf-8').read(), re.M)]
+    if mmd_files:
+        if '<pre class="mermaid">' not in html:
+            fail(f"md có fence ```mermaid ({mmd_files}) nhưng HTML không có pre.mermaid — build lại")
+        if 'mermaid.initialize' not in html:
+            fail("HTML có pre.mermaid nhưng thiếu mermaid vendored (mermaid.initialize) — build lại")
+
     # 8. Nhãn suy luận không được rớt: nếu md nguồn có "[AI suy luận" thì HTML cũng phải có
     md_has_inference = any(
         '[AI suy luận' in open(os.path.join(abs_dir, f), encoding='utf-8').read()

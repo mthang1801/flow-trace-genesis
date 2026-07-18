@@ -201,6 +201,14 @@ def render_md(body, ctx):
             body_code = '\n'.join(code)
             if lang == 'refs':
                 out.append(render_refs(yaml.safe_load(body_code)))
+            elif lang == 'mermaid':
+                # fence ```mermaid → diagram thật (mermaid vendored, render lazy theo
+                # section active); source gốc giữ trong <details> để vẫn copy được.
+                ctx['used'].add('mermaid')
+                out.append(
+                    f'<div class="mmd-wrap"><pre class="mermaid">{esc(body_code)}</pre>'
+                    '<details class="mmd-src"><summary>Mermaid source</summary>'
+                    + render_code('mermaid', title, body_code) + '</details></div>')
             elif lang == 'kg':
                 # fence ```kg → canvas knowledge graph; data từ <doc-folder>/graph.json
                 # (sinh bởi render/kg/extract.py), nhúng lúc assembly khi ctx['used'] có 'kg'.
@@ -347,11 +355,20 @@ def build(doc_dir):
               + f'\nwindow.__KG_DATA__ = {json.dumps(gdata, ensure_ascii=False)};\n'
               + open(os.path.join(RENDER, 'assets/kg-init.js'), encoding='utf-8').read()
               + '\n' + js)
+    if 'mermaid' in ctx['used']:
+        js = (open(os.path.join(RENDER, 'assets/mermaid.min.js'), encoding='utf-8').read()
+              + '\n' + open(os.path.join(RENDER, 'assets/mermaid-init.js'), encoding='utf-8').read()
+              + '\n' + js)
     submap = {}
     for sec_id, subs in (doc.get('subs') or {}).items():
         for sub in (subs or []):
             submap[sub] = sec_id
     js = f'window.__SUBMAP__ = {json.dumps(submap)};\n' + js
+    # Vô hiệu hoá "</script|</body|</html" trong bundle (chỉ xuất hiện trong string/regex
+    # của lib vendored — vd DOMPurify trong mermaid chứa "</body></html>"): "</script" đóng
+    # inline script sớm khi browser parse, còn "</body" là điểm inject của live-server —
+    # nó chèn snippet <script>…</script> vào giữa bundle làm vỡ toàn bộ JS.
+    js = re.sub(r'</(script|body|html)', r'<\\/\1', js, flags=re.I)
     tpl = open(os.path.join(RENDER, 'templates/base.html'), encoding='utf-8').read()
     out = tpl
     for k, v in {

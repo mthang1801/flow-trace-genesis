@@ -76,7 +76,7 @@ section/nav drift, và **rớt nhãn `[AI suy luận`** khi md nguồn có.
 | `> [!problem]` / `[!solution]` / `[!conclusion]` | box Đặt vấn đề / Giải pháp / Kết luận |
 | `> [!concept]` / `[!example]` | concept box / example card |
 | ` ```ts/js/sql/go title="file.ts" ` | code block highlight + copy button |
-| ` ```mermaid ` | code block giữ nguyên source (copy được; Obsidian/claude.ai render native) |
+| ` ```mermaid ` | **diagram render thật** (mermaid vendored ~3.5MB, nhúng chỉ khi doc có fence) — render lazy khi section active (mermaid đo getBBox, vẽ trong `display:none` sẽ hỏng); source gốc giữ trong `<details>` collapse để copy. Source PHẢI parse được với mermaid 11 — bẫy đã gặp: label dotted-edge kiểu `-.text.->` không được chứa `.` (dùng `-.->|text|` thay thế); check.py bắt fence↔pre.mermaid↔lib nhúng nhưng KHÔNG bắt syntax lỗi (chỉ hiện bomb lúc runtime) — verify bằng browser hoặc `mermaid.parse` |
 | ` ```kg ` (fence rỗng) | canvas knowledge graph tương tác (Cytoscape.js vendored) — data từ `<doc-folder>/graph.json` do `render/kg/extract.py` sinh; thiếu graph.json thì build fail |
 | ` ```refs ` (YAML `{icon,title,desc,url,star}`) | ref-card grid |
 | Bảng md | `.tbl` (cell `code` màu cyan — dùng cho `file:line`) |
@@ -87,7 +87,11 @@ section/nav drift, và **rớt nhãn `[AI suy luận`** khi md nguồn có.
 (bold leak → check.py fail); (2) marker SVG (`url(#id)`) phải có `<defs>` trong **chính SVG
 đó** với id duy nhất toàn document; (3) không dùng blockquote trần `>` — chỉ dùng dạng
 callout `> [!type]`; (4) ngôn ngữ ngoài ts/js/sql/go không được highlight (render plain) —
-chấp nhận được, đừng chế thêm highlighter khi chưa cần.
+chấp nhận được, đừng chế thêm highlighter khi chưa cần; (5) build.py vô hiệu hoá
+`</script|</body|</html` trong bundle JS thành `<\/...` — lib vendored (DOMPurify trong
+mermaid) chứa literal `"</body></html>"`, live-server inject snippet live-reload vào trước
+`</body>` ĐẦU TIÊN của response → nếu không escape, script inline bị đóng sớm và toàn bộ
+JS của trang vỡ (SyntaxError + nửa sau parse thành HTML).
 
 ## Mapping section report-template → section md (có KG từ 2026-07-18)
 

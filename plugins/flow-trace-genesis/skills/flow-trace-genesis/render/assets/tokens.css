@@ -595,6 +595,19 @@ hr.div{border:none;border-top:1px solid var(--border);margin:30px 0}
 .fc-controls button{padding:7px 12px; background:var(--card); border:1px solid var(--border); color:var(--txt1); border-radius:7px; cursor:pointer; font-family:var(--sans); font-size:13px;}
 .fc-controls button:hover{border-color:var(--cyan);}
 
+/* ─── MERMAID (fence ```mermaid — diagram render thật, source thu gọn) ─── */
+.mmd-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;
+          padding:16px;margin-bottom:26px;overflow-x:auto}
+.mmd-wrap pre.mermaid{background:transparent;border:none;margin:0;padding:0;
+                      display:flex;justify-content:center;font-family:var(--mono);
+                      font-size:13px;color:var(--txt2)}
+.mmd-wrap pre.mermaid svg{max-width:100%;height:auto}
+.mmd-src{margin-top:10px;border-top:1px dashed var(--border);padding-top:8px}
+.mmd-src summary{cursor:pointer;font-family:var(--mono);font-size:12px;
+                 color:var(--txt2);user-select:none}
+.mmd-src summary:hover{color:var(--cyan)}
+.mmd-src .code-wrap{margin-top:10px;margin-bottom:0}
+
 /* ─── KNOWLEDGE GRAPH (fence ```kg — cytoscape canvas) ─── */
 .kg-wrap{background:var(--card);border:1px solid var(--border);border-radius:12px;
          padding:10px;margin-bottom:26px}
