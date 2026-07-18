@@ -26,6 +26,19 @@ nhanh** — v1 chủ đích chỉ copy-file + bảng mapping này, không abstra
    templates/, assets/).
 3. `python3 <skill>/render/build.py --help` chạy được (cần python3 + PyYAML).
 
+## Doctor — kiểm kê & cài tool phụ trợ
+
+```bash
+./installers/doctor.sh            # scan read-only: tool × tier (required/trace/optional) × mất gì × lệnh fix
+./installers/doctor.sh --install  # cài interactive tool user-space (pip --user / npm -g), y/N từng tool
+```
+
+- Exit code 0 = đủ tool required (python3 + PyYAML); 1 = thiếu required — dùng được cho
+  smoke test/CI.
+- KHÔNG bao giờ tự `sudo`: package hệ thống (python3, ripgrep, nodejs, gopls) chỉ in lệnh
+  đúng cho package manager của máy (dnf/apt/pacman/zypper/brew) để user tự chạy.
+- Agent/skill không tự chạy doctor `--install` — bước Khảo sát chỉ trỏ user tới script.
+
 ## Ghi chú
 
 - Script KHÔNG xóa gì; cài đè lên bản cũ chỉ ghi đè file trùng tên.

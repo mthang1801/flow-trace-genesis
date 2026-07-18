@@ -18,6 +18,40 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — installers/doctor.sh: kiểm kê + cài tool opt-in
+
+**Loại**: Distribution / DX
+
+**Thay đổi**:
+- `installers/doctor.sh` 2 chế độ: scan read-only (tool × tier required/trace/optional ×
+  impact × lệnh fix đúng package manager của máy — dnf/apt/pacman/zypper/brew) và
+  `--install` cài user-space (pip --user / npm -g) sau y/N từng tool. Không bao giờ tự
+  sudo; exit 1 khi thiếu required (python3/PyYAML) — dùng được cho smoke test.
+- SKILL.md bước Khảo sát: thiếu tool → nói rõ mất gì + trỏ user tới doctor, agent không
+  tự chạy install. README EN/VI thêm mục "Get the most out of it"; installers/README.md
+  thêm section Doctor.
+- Verify trên máy thật: bắt đúng rg thiếu (fact đã biết), no-tty tự skip an toàn.
+
+**Trạng thái**: `Done`.
+
+### 2026-07-18 — Mermaid render thật trong HTML (sync từ Lending)
+
+**Loại**: Feature (sync — luật không-fork)
+
+**Thay đổi**:
+- `render/` nhận bản mới: `assets/mermaid.min.js` 11.16.0 vendored (3.5MB, nhúng chỉ khi
+  doc có fence) + `mermaid-init.js` (render lazy theo section active — getBBox hỏng trong
+  `display:none`); build.py: fence ```mermaid → diagram thật + source trong `<details>`,
+  và escape `</script|</body|</html` trong bundle JS (DOMPurify của mermaid chứa
+  `"</body></html>"` → live-server inject làm vỡ toàn bộ inline script); check.py check 8c
+  fence↔pre.mermaid↔lib.
+- `references/html-render.md`: row mermaid mới + bẫy (5) live-server injection; lưu ý
+  source phải parse được mermaid 11 (label dotted-edge không chứa `.`).
+- Golden grpc-go rebuild 4286742 bytes, check pass; 2 fence parse OK qua `mermaid.parse`.
+
+**Trạng thái**: `Done` — evidence chi tiết bên Lending
+(`.agents/changes/flow-trace-knowledge-graph/evidence.md`, iteration 4).
+
 ### 2026-07-18 — KG control panel + hỗ trợ Cursor/Antigravity + README cộng đồng
 
 **Loại**: Feature / Distribution / Docs

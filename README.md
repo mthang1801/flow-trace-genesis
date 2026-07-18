@@ -110,6 +110,15 @@ installers/                          # multi-harness install.sh + prompts/
 - `python3` + PyYAML (HTML render). Node/npx if using the knowledge graph (GitNexus).
 - The MCP bundle in `.mcp.json` is optional — the entire main flow works without it.
 
+**Get the most out of it** — check what your machine has and what it's missing:
+
+```bash
+./installers/doctor.sh            # read-only scan: tool × tier × impact × exact fix command
+./installers/doctor.sh --install  # interactively install user-space tools (pip --user / npm -g)
+```
+
+The doctor never runs `sudo`: system packages are suggested as commands for you to run yourself; user-space installs run only after a per-tool y/N. Everything missing just degrades gracefully — nothing blocks the main flow except `python3` + PyYAML.
+
 ## Safety
 
 - Genesis is read-only toward the target project's source code; it writes skill files only after listing them and getting your confirmation; it never installs third-party tools on its own; it never commits on your behalf.

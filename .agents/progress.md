@@ -4,6 +4,10 @@
 
 ## Activity Log
 
+| 2026-07-18 | claude | installers/doctor.sh: scan tool theo tier + `--install` user-space opt-in (không sudo, y/N từng tool); wire vào SKILL.md bước Khảo sát + README EN/VI + installers/README.md. Verify máy thật: bắt đúng rg thiếu. | `installers/doctor.sh`, `SKILL.md`, `README*.md` |
+
+| 2026-07-18 | claude | Sync mermaid-render từ Lending: fence ```mermaid → diagram thật (mermaid 11.16.0 vendored, lazy theo section active, source trong details); build.py escape `</script|</body|</html` chống live-server injection; check.py 8c; golden grpc-go rebuild+check pass. | `plugins/.../render/`, `references/html-render.md` |
+
 | 2026-07-18 | claude | KG panel kiểu Obsidian + layout 1560px (sync từ Lending); installer thêm target antigravity (`~/.gemini/skills/`) và sửa cursor sang `~/.cursor/skills-cursor/` (Agent Skills native — xác minh trên máy); README viết lại hướng cộng đồng (bỏ project test local). | `installers/`, `README.md`, `plugins/.../render/` |
 
 | 2026-07-18 | claude | Nhận sync tính năng Knowledge Graph từ Lending (không fork): render/ (+kg/extract.py, cytoscape vendored, kg-init.js, build/check mở rộng) + html-render.md (12 section, KG=02, pipeline script-first). Áp cho golden grpc-go: analyze 1:57ph, extract 200 nodes/332 edges, build+check pass. | `plugins/.../render/`, `references/html-render.md` |

@@ -41,6 +41,9 @@ md-source → HTML, và chỉ được coi là xong khi qua golden-flow gate.
 - Kiểm kê tool thật trên máy (chạy thử, không đoán): LSP, Serena (uvx), ast-grep, grep
   variant, GitNexus index, markitdown/docling MCP. Tool bên thứ ba CHƯA cài → audit trước,
   hỏi user trước khi cài (safety rule).
+- Có tool thiếu → nói rõ user đang mất gì (tier nào) và chỉ tới
+  `installers/doctor.sh` (scan read-only; `--install` chỉ cài user-space sau y/N từng
+  tool). Agent KHÔNG tự chạy install — user tự chạy script.
 - Chạy Candidate advisor nếu sẵn để lấy bản đồ sơ bộ; đánh dấu mọi output là "ứng viên".
 - **Gate**: bản kiểm kê tool + bản đồ service sơ bộ trình user trước khi đào sâu.
 

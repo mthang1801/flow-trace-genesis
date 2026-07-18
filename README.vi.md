@@ -110,6 +110,15 @@ installers/                          # install.sh đa harness + prompts/
 - `python3` + PyYAML (render HTML). Node/npx nếu dùng knowledge graph (GitNexus).
 - MCP bundle trong `.mcp.json` là tùy chọn — thiếu vẫn chạy được toàn bộ luồng chính.
 
+**Khai thác tối đa** — kiểm tra máy đang có gì, thiếu gì:
+
+```bash
+./installers/doctor.sh            # scan read-only: tool × tier × mất gì × lệnh fix chính xác
+./installers/doctor.sh --install  # cài interactive các tool user-space (pip --user / npm -g)
+```
+
+Doctor không bao giờ tự chạy `sudo`: package hệ thống chỉ được in lệnh để bạn tự chạy; cài user-space chỉ chạy sau khi bạn y/N từng tool. Thiếu gì thì degrade nấy — không gì chặn luồng chính ngoài `python3` + PyYAML.
+
 ## An toàn
 
 - Genesis đọc-only với source code project đích; chỉ ghi file skill sau khi liệt kê + bạn confirm; không tự cài tool bên thứ ba; không commit hộ.
