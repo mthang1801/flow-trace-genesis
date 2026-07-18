@@ -1,5 +1,6 @@
 # flow-trace-genesis
 
+[![CI](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml/badge.svg)](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/mthang1801/flow-trace-genesis?color=blue)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-brightgreen)](plugins/flow-trace-genesis/.claude-plugin/plugin.json)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](https://docs.anthropic.com/en/docs/claude-code/plugins)
@@ -50,7 +51,7 @@ Output thật, không chỉnh tay, từ lần chạy plugin trên [grpc/grpc-go]
 
 ![Section bảng bước](docs/images/sample-steps.png)
 
-HTML hoàn toàn self-contained — tải [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) về mở offline bằng browser bất kỳ.
+**[Xem demo trực tiếp](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — không cần tải về. HTML cũng hoàn toàn self-contained — tải [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) về mở offline bằng browser bất kỳ.
 
 ## Cài đặt
 
@@ -145,7 +146,10 @@ Doctor không bao giờ tự chạy `sudo`: package hệ thống chỉ được 
 
 ## Đóng góp
 
-Issue/PR chào đón tại [github.com/mthang1801/flow-trace-genesis](https://github.com/mthang1801/flow-trace-genesis). Quy ước: Conventional Commits; thay đổi playbook/template cần kèm một lần chạy thật (golden flow) làm bằng chứng.
+Issue/PR chào đón tại [github.com/mthang1801/flow-trace-genesis](https://github.com/mthang1801/flow-trace-genesis). Quy ước: Conventional Commits; thay đổi playbook/template cần kèm một lần chạy thật (golden flow) làm bằng chứng. Chi tiết quy trình PR: [CONTRIBUTING.md](CONTRIBUTING.md).
+
+> **Quy ước song ngữ**: [README.md](README.md) (English) là bản gốc/nguồn sự thật; file
+> này là bản dịch theo sau. Sửa nội dung → sửa bản English trước, dịch lại bản này.
 
 ## License
 

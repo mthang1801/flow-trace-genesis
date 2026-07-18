@@ -1,5 +1,6 @@
 # flow-trace-genesis
 
+[![CI](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml/badge.svg)](https://github.com/mthang1801/flow-trace-genesis/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/mthang1801/flow-trace-genesis?color=blue)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-brightgreen)](plugins/flow-trace-genesis/.claude-plugin/plugin.json)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)](https://docs.anthropic.com/en/docs/claude-code/plugins)
@@ -50,7 +51,7 @@ Real, unedited output from running the plugin on [grpc/grpc-go](https://github.c
 
 ![Step table section](docs/images/sample-steps.png)
 
-The HTML is fully self-contained — download [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) and open it offline in any browser.
+**[Open the live demo](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — no download needed. The HTML is also fully self-contained — grab [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) and open it offline in any browser.
 
 ## Installation
 
@@ -145,7 +146,7 @@ The doctor never runs `sudo`: system packages are suggested as commands for you 
 
 ## Contributing
 
-Issues/PRs welcome at [github.com/mthang1801/flow-trace-genesis](https://github.com/mthang1801/flow-trace-genesis). Conventions: Conventional Commits; playbook/template changes must come with one real run (a golden flow) as evidence.
+Issues/PRs welcome at [github.com/mthang1801/flow-trace-genesis](https://github.com/mthang1801/flow-trace-genesis). Conventions: Conventional Commits; playbook/template changes must come with one real run (a golden flow) as evidence. Full PR workflow: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

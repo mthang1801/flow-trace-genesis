@@ -18,6 +18,31 @@
 
 ## Changelog Chi Tiết
 
+### 2026-07-18 — CI, tag/release, no-fork guard, Pages demo, CONTRIBUTING
+
+**Loại**: Distribution / DX / Docs (punch list P1-P5 sau audit repo public)
+
+**Thay đổi**:
+- **P1 CI** (`.github/workflows/ci.yml`, 3 job): render golden (`build.py`+`check.py` trên
+  `examples/grpc-go`), doctor.sh smoke (exit code), shellcheck 3 script. Badge CI ở đầu
+  README EN/VI. Verify local trước khi push: cả 3 job pass y hệt logic CI.
+- **P3 no-fork guard**: `scripts/check-render-sync.sh` (generic, N thư mục, treesum
+  md5) — verify thật: 3 bản Lending+genesis đang identical. Wire vào CI job thứ 4
+  (`render-sync`): tự phát hiện mọi bản `render/` trong repo, chỉ diff khi ≥2 bản (hiện
+  genesis chỉ có 1 bản canonical nên job là guard-tương-lai, không phải no-op vô nghĩa).
+  Copy script sang Lending `.agents/scripts/` để dùng trong harness (so 2 bản nội bộ
+  Lending) — không commit bên đó, thuộc phạm vi khác.
+- **P4 Pages**: `.nojekyll` (chặn Jekyll build tự động xử lý sai file), README EN/VI thêm
+  link "Open the live demo" trỏ thẳng sample HTML qua GitHub Pages — không cần tải 4.3MB.
+- **P5**: `CONTRIBUTING.md` (checklist evidence-first, no-fork rule, dependency floor,
+  no-secrets) + `.github/pull_request_template.md`; README.vi thêm quy ước "EN là nguồn
+  sự thật". Mermaid syntax lint (node+jsdom) — HOÃN, đúng khuyến nghị gốc là điều kiện
+  ("đáng làm nếu tần suất viết fence mermaid tăng"), chưa tới ngưỡng.
+- P2 (tag v0.1.0 + Release + asset) thực hiện riêng sau khi commit này lên main — xem
+  entry kế tiếp.
+
+**Trạng thái**: `Done`.
+
 ### 2026-07-18 — Gỡ profiles/lending.md khỏi repo public (kể cả git history)
 
 **Loại**: Security / Compliance (sanitize-before-public)

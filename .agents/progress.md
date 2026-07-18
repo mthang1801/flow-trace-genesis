@@ -4,6 +4,8 @@
 
 ## Activity Log
 
+| 2026-07-18 | claude | Punch-list P1/P3/P4/P5 sau audit repo public: CI 4 job (render/doctor/shellcheck/render-sync), badge CI; `scripts/check-render-sync.sh` guard chống trôi render/ (verify thật, wire CI); `.nojekyll` + link live demo GitHub Pages; CONTRIBUTING.md + PR template. Mermaid lint hoãn (chưa tới ngưỡng). | `.github/`, `scripts/`, `CONTRIBUTING.md` |
+
 | 2026-07-18 | claude | **Security**: gỡ `profiles/lending.md` (internal, chưa sanitize) khỏi repo public — backup vào Lending private, `git filter-repo` xoá khỏi toàn bộ history, force-push. SKILL.md đổi mẫu vàng sang `examples/grpc-go` (public-safe). | git history rewrite, `SKILL.md` |
 
 | 2026-07-18 | claude | Đồng bộ định vị mọi-domain: marketplace/plugin.json description+keywords, SKILL.md genesis (frontmatter + intro), prompt installer, core-template (description skill sinh ra). Giữ nguyên trigger keywords, chỉ bổ sung. Plugin details load OK ~353 tok. | manifests, `SKILL.md`, `core-template.md` |
