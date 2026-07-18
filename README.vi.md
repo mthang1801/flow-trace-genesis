@@ -51,7 +51,7 @@ Output thật, không chỉnh tay, từ lần chạy plugin trên [grpc/grpc-go]
 
 ![Section bảng bước](docs/images/sample-steps.png)
 
-**[Xem demo trực tiếp](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — không cần tải về. HTML cũng hoàn toàn self-contained — tải [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) về mở offline bằng browser bất kỳ.
+**[Xem demo trực tiếp](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — không cần tải về. HTML cũng hoàn toàn self-contained — tải từ repo ([`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html)) hoặc từ [release asset ổn định](https://github.com/mthang1801/flow-trace-genesis/releases/latest) về mở offline bằng browser bất kỳ.
 
 ## Cài đặt
 

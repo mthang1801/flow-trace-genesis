@@ -22,6 +22,12 @@ first.
 - **No secrets, no internal data.** This repo is public. Don't commit real company names,
   internal service maps, partner integration names, or anything from a private
   `profiles/*.md` you authored for your own project — those stay local/private.
+- **Heavy samples go on Releases, not in git.** `examples/` is for one small, currently
+  actively-referenced sample (README links to it, CI builds it). A new full sample
+  (generated skill + handbook + built HTML, easily several MB) should ship as a
+  [release asset](https://github.com/mthang1801/flow-trace-genesis/releases) instead of
+  a repo commit — attach it to a release and link it from the README/PR, the way the
+  `v0.1.0` grpc-go sample HTML is attached. Keeps `git clone` fast as samples accumulate.
 
 ## Running the checks locally
 

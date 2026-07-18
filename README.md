@@ -51,7 +51,7 @@ Real, unedited output from running the plugin on [grpc/grpc-go](https://github.c
 
 ![Step table section](docs/images/sample-steps.png)
 
-**[Open the live demo](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — no download needed. The HTML is also fully self-contained — grab [`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html) and open it offline in any browser.
+**[Open the live demo](https://mthang1801.github.io/flow-trace-genesis/examples/grpc-go/docs/flows/unary-invoke-client.html)** — no download needed. The HTML is also fully self-contained — grab it from the repo ([`examples/grpc-go/docs/flows/unary-invoke-client.html`](examples/grpc-go/docs/flows/unary-invoke-client.html)) or as a stable [release asset](https://github.com/mthang1801/flow-trace-genesis/releases/latest) and open it offline in any browser.
 
 ## Installation
 
